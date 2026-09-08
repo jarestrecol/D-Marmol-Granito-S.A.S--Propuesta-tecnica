@@ -1,0 +1,18 @@
+# Artefactos del editor de diseño
+.thumbnail
+
+# Material local, fuera de la publicación.
+# Se conserva en disco; no va al repositorio porque es público.
+#   dist/     copia autónoma anterior, desactualizada respecto de index.html
+#   uploads/  material de origen y JSON con cifras de una versión descartada
+dist/
+uploads/
+
+# Artefactos de automatización de navegador
+.playwright-mcp/
+*-check.png
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store

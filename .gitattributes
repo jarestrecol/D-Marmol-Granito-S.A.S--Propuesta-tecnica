@@ -1,0 +1,8 @@
+# El documento y su runtime son generados: sin conversión de fin de línea,
+# para que git no reporte el archivo completo como modificado.
+index.html -text
+*.dc.html -text
+support.js -text
+
+# Texto normalizado a LF en el repositorio.
+*.md text eol=lf

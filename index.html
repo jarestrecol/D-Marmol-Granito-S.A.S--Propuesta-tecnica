@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta Módulo 1 · Bodega y Almacén | D&#39;Mármol &amp; Granito S.A.S</title>
+<meta name="description" content="Propuesta técnica y económica del Módulo 1 (Control de Bodega y Almacén) para D&#39;Mármol &amp; Granito S.A.S. · Neodysk">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#071A2E">
+<link rel="icon" type="image/png" href="assets/neodysk-icon.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#071A2E">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#071A2E"/>
+    <circle cx="600" cy="400" r="240" fill="none" stroke="#1EC8C8" stroke-width="3" opacity="0.5"/>
+    <circle cx="600" cy="400" r="160" fill="none" stroke="#2563EB" stroke-width="3" opacity="0.7"/>
+    <circle cx="600" cy="400" r="86" fill="rgba(139,92,246,0.28)" stroke="#8B5CF6" stroke-width="3"/>
+    <text x="600" y="392" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="34" font-weight="600">Neodysk</text>
+    <text x="600" y="428" text-anchor="middle" fill="#C4B5FD" font-family="monospace" font-size="18" letter-spacing="3">MÓDULO 1</text>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&amp;family=Archivo:ital,wght@0,300..600;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #071A2E; color: #E6EEF6; font-family: Archivo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  a { color: #1EC8C8; text-decoration: none; }
+  a:hover { color: #00C896; }
+  ::selection { background: #2563EB; color: #fff; }
+  ::-webkit-scrollbar { width: 9px; }
+  ::-webkit-scrollbar-track { background: #071A2E; }
+  ::-webkit-scrollbar-thumb { background: #1F2937; }
+  ::-webkit-scrollbar-thumb:hover { background: #2563EB; }
+  @keyframes ndMq { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+  @keyframes ndBlink { 0%,55% { opacity: 1; } 56%,100% { opacity: .2; } }
+  @keyframes ndFloat { 0%,100% { transform: translate3d(0,0,0); } 50% { transform: translate3d(0,-10px,0); } }
+  @keyframes ndSpin { to { transform: rotate(360deg); } }
+  @keyframes ndSweep { 0% { transform: translateX(-140%) skewX(-20deg); } 60%,100% { transform: translateX(340%) skewX(-20deg); } }
+  @keyframes ndGlow { 0%,100% { opacity: .35; } 50% { opacity: .8; } }
+  @keyframes ndDash { to { stroke-dashoffset: 0; } }
+  section p, footer p { text-align: justify; text-justify: inter-word; overflow-wrap: break-word; }
+  @media (max-width: 900px) { [data-nav-list] { display: none !important; } }
+  @media (max-width: 900px) { [data-bars] + div[aria-hidden="true"], div:has(+ [data-bars]) { display: none !important; } }
+  @media (max-width: 620px) { section p, footer p { text-align: left; } }
+  @media print { body { background: #fff; color: #000; } [data-canvas] { display: none; } }
+</style>
+</helmet>
+<div style="position:relative;background:#071A2E;overflow:clip">
+
+  <div style="position:fixed;top:0;left:0;right:0;height:2px;z-index:60;background:rgba(255,255,255,.07)">
+    <div data-progress="" style="height:100%;width:0%;background:linear-gradient(90deg,#1EC8C8,#2563EB 55%,#00C896)"></div>
+  </div>
+
+  <header data-topbar="" style="position:fixed;top:2px;left:0;right:0;z-index:50;transition:background .5s ease,border-color .5s ease;border-bottom:1px solid rgba(255,255,255,0);background:rgba(7,26,46,0)">
+    <div style="max-width:1280px;margin:0 auto;padding:16px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between">
+      <a href="#top" style="display:flex;align-items:center;gap:11px;flex:0 0 auto">
+        <img src="assets/neodysk-icon.png" alt="Neodysk" style="width:30px;height:30px;object-fit:contain;display:block;filter:drop-shadow(0 0 14px rgba(30,200,200,.45))">
+        <span style="font-family:Sora,sans-serif;font-size:17px;font-weight:600;letter-spacing:-.01em;color:#fff">Neodysk</span>
+      </a>
+      <nav data-nav-list="" style="display:flex;flex-wrap:wrap;gap:1px;align-items:center;font-size:12px;font-weight:500;color:#93A7BC">
+        <a href="#problema" data-nav="problema" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Problema</a>
+        <a href="#inversion" data-nav="inversion" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Inversión</a>
+        <a href="#objeto" data-nav="objeto" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Objeto</a>
+        <a href="#sistema" data-nav="sistema" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Sistema</a>
+        <a href="#mercado" data-nav="mercado" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Mercado</a>
+        <a href="#alcance" data-nav="alcance" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Alcance</a>
+        <a href="#tecnica" data-nav="tecnica" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Técnica</a>
+        <a href="#arquitectura" data-nav="arquitectura" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Arquitectura</a>
+        <a href="#escala" data-nav="escala" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Escala</a>
+        <a href="#plazo" data-nav="plazo" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Plazo</a>
+        <a href="#valor" data-nav="valor" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Valor</a>
+        <a href="#acuerdo" data-nav="acuerdo" style="padding:8px 9px;transition:color .3s,background .3s;border-radius:3px">Acuerdo</a>
+      </nav>
+      <a href="#valor" style="position:relative;overflow:hidden;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.03em;color:#071A2E;background:#1EC8C8;padding:10px 16px;border-radius:3px;flex:0 0 auto;transition:transform .3s ease,box-shadow .3s ease" style-hover="transform:translateY(-2px);box-shadow:0 10px 26px rgba(30,200,200,.32)">
+        <span style="position:relative;z-index:2">$ 15.000.000 COP</span>
+        <span style="position:absolute;top:0;left:0;width:34%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);animation:ndSweep 4.6s ease-in-out infinite"></span>
+      </a>
+    </div>
+  </header>
+
+  <section id="top" data-screen-label="Portada" style="position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:130px 0 0;overflow:hidden;background:radial-gradient(120% 90% at 78% 6%,#0F3358 0%,#0A2540 42%,#071A2E 100%)">
+    <canvas data-canvas="hero" style="position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.85"></canvas>
+    <div style="position:absolute;top:-12%;right:-6%;width:46vw;height:46vw;max-width:640px;max-height:640px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.30),transparent 66%);filter:blur(20px);animation:ndGlow 9s ease-in-out infinite;pointer-events:none"></div>
+    <div style="position:absolute;bottom:12%;left:-8%;width:38vw;height:38vw;max-width:520px;max-height:520px;border-radius:50%;background:radial-gradient(circle,rgba(30,200,200,.18),transparent 68%);filter:blur(24px);animation:ndGlow 11s ease-in-out infinite reverse;pointer-events:none"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 30px;width:100%;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-end">
+      <div style="flex:1 1 560px;min-width:0">
+        <div data-reveal="" style="display:flex;flex-wrap:wrap;align-items:center;gap:13px;margin-bottom:30px">
+          <span style="width:30px;height:1px;background:#1EC8C8;display:block"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#1EC8C8">Oferta técnica y económica · Módulo 1 de 4</span>
+        </div>
+        <h1 data-reveal="" style="font-family:Sora,sans-serif;font-weight:600;font-size:clamp(2.3rem,5.2vw,4.6rem);line-height:1.01;letter-spacing:-.035em;margin:0;max-width:17ch;color:#fff;text-wrap:balance">Sistema de Gestión Integral</h1>
+        <p data-reveal="" style="font-family:Sora,sans-serif;font-weight:300;font-size:clamp(1.25rem,2.5vw,2.1rem);line-height:1.16;letter-spacing:-.02em;margin:16px 0 0;max-width:22ch;background:linear-gradient(96deg,#1EC8C8,#2563EB 60%,#8B5CF6);-webkit-background-clip:text;background-clip:text;color:transparent">Control de Bodega y Almacén</p>
+        <p data-reveal="" style="font-size:16px;line-height:1.62;color:#93A7BC;margin:26px 0 0;max-width:54ch;text-wrap:pretty">Primer módulo del sistema propio de gestión de D'Mármol &amp; Granito S.A.S. Propuesta preparada para la Gerencia General, agosto de 2026.</p>
+        <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 0">
+          <a href="#valor" style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:#071A2E;background:#00C896;padding:14px 22px;border-radius:3px;transition:transform .3s ease,box-shadow .3s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,200,150,.3)">Ver inversión y forma de pago
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:13px">↓</span>
+          </a>
+          <a href="#mercado" style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:#E6EEF6;border:1px solid rgba(255,255,255,.18);padding:14px 22px;border-radius:3px;transition:border-color .3s ease,background .3s ease" style-hover="border-color:#1EC8C8;background:rgba(30,200,200,.08)">Comparar con el mercado</a>
+        </div>
+      </div>
+      <div data-reveal="" style="flex:0 1 300px;min-width:0;display:flex;justify-content:flex-end;padding-bottom:8px">
+        <img src="assets/neodysk-logo.png" alt="Neodysk" style="width:100%;max-width:280px;height:auto;display:block;animation:ndFloat 7s ease-in-out infinite;filter:drop-shadow(0 18px 46px rgba(30,200,200,.28))">
+      </div>
+    </div>
+    <div style="position:relative;margin-top:clamp(44px,8vh,84px);border-top:1px solid rgba(255,255,255,.09);background:rgba(7,26,46,.55);backdrop-filter:blur(8px)">
+      <div style="max-width:1280px;margin:0 auto;padding:0 30px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+          <div data-reveal="" style="padding:24px 22px 24px 0;border-right:1px solid rgba(255,255,255,.08)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC;margin-bottom:8px">Destinatario</div>
+            <div style="font-size:16px;font-weight:500;color:#fff">Gerencia General</div>
+          </div>
+          <div data-reveal="" style="padding:24px 22px;border-right:1px solid rgba(255,255,255,.08)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC;margin-bottom:8px">Plazo de ejecución</div>
+            <div style="font-size:16px;font-weight:500;color:#fff">2 meses · 8 semanas</div>
+          </div>
+          <div data-reveal="" style="padding:24px 22px;border-right:1px solid rgba(255,255,255,.08)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC;margin-bottom:8px">Valor total</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600;color:#1EC8C8">$ 15.000.000 COP</div>
+          </div>
+          <div data-reveal="" style="padding:24px 0 24px 22px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC;margin-bottom:8px">Validez de la oferta</div>
+            <div style="font-size:16px;font-weight:500;color:#fff">15 días calendario</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative;border-top:1px solid rgba(255,255,255,.08);overflow:hidden;background:#0A2540">
+      <div style="display:flex;width:max-content;animation:ndMq 46s linear infinite;will-change:transform">
+        <div data-marquee-track="" style="display:flex;align-items:center"></div>
+      </div>
+      <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#0A2540,transparent 12%,transparent 88%,#0A2540)"></div>
+    </div>
+  </section>
+
+  <section id="problema" data-screen-label="Situación actual" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:300;line-height:1;color:#E0A83B">◆</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Situación</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#E0A83B;margin-bottom:16px">Resumen para la gerencia</div>
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:26ch;text-wrap:balance">El problema que la operación vive hoy</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 40px;max-width:66ch;text-wrap:pretty">La operación se estima en cinco sedes: dos bodegas, dos puntos de venta y un almacén general de producción. El objetivo es sistematizar para disponer de datos reales de la operación de forma continua y hacer seguimiento a las cotizaciones y a los clientes. Hoy se prioriza el control de almacén y bodegaje: se requiere sistematizar antes de aperturar las nuevas líneas de producto que llegarán a la empresa, y mejorar el control de los productos actuales.</p>
+
+        <div data-anim="" style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+          <div data-pop="" style="opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1);flex:1 1 300px;min-width:0;border:1px solid rgba(255,255,255,.1);border-left:3px solid #E0A83B;background:#0A2540;padding:24px 24px 12px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#E0A83B;margin-bottom:16px">Situación actual</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Inventario distribuido en cinco sedes —dos bodegas, dos puntos de venta y el almacén general de producción— sin una vista única.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Dependencia del conocimiento de cada persona.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Riesgo de compras duplicadas de material.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Dificultad para localizar materiales entre sedes.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Ausencia de trazabilidad completa de los movimientos.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#E0A83B;margin-top:7px"></span><span style="min-width:0">Nuevas líneas de producto por ingresar, sin una base sistematizada que las reciba.</span></li>
+            </ul>
+          </div>
+          <div data-pop="" style="opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1);flex:1 1 300px;min-width:0;border:1px solid rgba(255,255,255,.1);border-left:3px solid #00C896;background:rgba(0,200,150,.06);padding:24px 24px 12px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#00C896;margin-bottom:16px">Resultado esperado</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5">✓</span><span style="min-width:0">Inventario visible en tiempo real, en cualquier sede.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5">✓</span><span style="min-width:0">Menor pérdida por errores y por material extraviado.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5">✓</span><span style="min-width:0">Menor tiempo de búsqueda de materiales.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5">✓</span><span style="min-width:0">Información centralizada para decidir compras.</span></li>
+              <li style="display:flex;gap:11px;font-size:14.5px;line-height:1.5;color:#E6EEF6"><span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5">✓</span><span style="min-width:0">Base sistematizada para aperturar nuevas líneas de producto.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inversion" data-screen-label="Comparación de inversión" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:300;line-height:1;color:#00C896">◆</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Decisión</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:24ch;text-wrap:balance">Comparación de la inversión inicial frente a alternativas de mercado</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 40px;max-width:66ch;text-wrap:pretty">La misma necesidad que resuelven las plataformas del mercado, con el código y los datos a nombre de la empresa y una inversión inicial mucho menor.</p>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:22px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">Inversión inicial · año 1</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Millones de COP · referencial</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px">
+              <span style="flex:1 1 210px;min-width:0;font-family:Sora,sans-serif;font-size:14.5px;font-weight:600;color:#00C896">Módulo 1 · Bodega y almacén <span style="font-weight:400;color:#93A7BC">(esta propuesta)</span></span>
+              <div style="flex:2 1 160px;min-width:0;height:22px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden"><div data-grow="" data-prop="width" data-gw="8.5" style="width:0;height:100%;background:#00C896;border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div></div>
+              <span style="flex:0 0 132px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#00C896;white-space:nowrap;font-variant-numeric:tabular-nums">$ 15.000.000</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px">
+              <span style="flex:1 1 210px;min-width:0;font-family:Sora,sans-serif;font-size:14.5px;font-weight:500;color:#E6EEF6">Cúbico WMS</span>
+              <div style="flex:2 1 160px;min-width:0;height:22px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden"><div data-grow="" data-prop="width" data-gw="31.8" style="width:0;height:100%;background:#2563EB;border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div></div>
+              <span style="flex:0 0 132px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#E6EEF6;white-space:nowrap;font-variant-numeric:tabular-nums">$ 56.000.000+</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px">
+              <span style="flex:1 1 210px;min-width:0;font-family:Sora,sans-serif;font-size:14.5px;font-weight:500;color:#E6EEF6">Siesa WMS</span>
+              <div style="flex:2 1 160px;min-width:0;height:22px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden"><div data-grow="" data-prop="width" data-gw="68.2" style="width:0;height:100%;background:#2563EB;border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div></div>
+              <span style="flex:0 0 132px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#E6EEF6;white-space:nowrap;font-variant-numeric:tabular-nums">$ 120.000.000+</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px">
+              <span style="flex:1 1 210px;min-width:0;font-family:Sora,sans-serif;font-size:14.5px;font-weight:500;color:#E6EEF6">SAP Business One + WMS</span>
+              <div style="flex:2 1 160px;min-width:0;height:22px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden"><div data-grow="" data-prop="width" data-gw="100" style="width:0;height:100%;background:#2563EB;border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div></div>
+              <span style="flex:0 0 132px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#E6EEF6;white-space:nowrap;font-variant-numeric:tabular-nums">$ 176.000.000+</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;line-height:1.5;color:#93A7BC">Cifras de mercado referenciales; cada proveedor cotiza por separado y suele sumar licencia por usuario cada año. El propósito es mostrar el orden de magnitud, no un precio en firme.</div>
+        </div>
+
+        <div data-reveal="" style="margin-top:24px;border-left:2px solid #00C896;background:rgba(0,200,150,.07);padding:24px 26px">
+          <p style="font-size:clamp(1.05rem,1.8vw,1.35rem);line-height:1.45;color:#fff;margin:0;font-family:Sora,sans-serif;font-weight:400;text-wrap:pretty">La inversión inicial de esta propuesta equivale a entre el <strong style="color:#00C896;font-weight:600">9% y el 27%</strong> de la de un WMS empresarial en su primer año. La cifra corresponde únicamente al alcance del Módulo 1 y no a un alcance funcional equivalente al de esas plataformas.</p>
+        </div>
+
+        <div data-anim="" style="display:flex;flex-wrap:wrap;gap:16px;margin-top:40px">
+          <div data-pop="" style="opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1);flex:1 1 240px;min-width:0;border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:20px 22px">
+            <div style="font-family:Sora,sans-serif;font-size:14.5px;font-weight:600;color:#fff;margin-bottom:8px">ERP o WMS de mercado</div>
+            <p style="font-size:13.5px;line-height:1.5;color:#93A7BC;margin:0">Plataformas maduras para integrar logística y gestión a gran escala, con soporte de fábrica. Operan con licencia por usuario y suelen requerir configuración a la medida del negocio.</p>
+          </div>
+          <div data-pop="" style="opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1);flex:1 1 240px;min-width:0;border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:20px 22px">
+            <div style="font-family:Sora,sans-serif;font-size:14.5px;font-weight:600;color:#fff;margin-bottom:8px">Software contable-administrativo</div>
+            <p style="font-size:13.5px;line-height:1.5;color:#93A7BC;margin:0">Muy capaz en facturación DIAN, contabilidad e inventario por cantidad. Sólido si la prioridad es la gestión contable; su inventario es fungible y no modela la unidad física individual.</p>
+          </div>
+          <div data-pop="" style="opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s cubic-bezier(.16,1,.3,1);flex:1 1 240px;min-width:0;border:1px solid rgba(0,200,150,.28);background:rgba(0,200,150,.06);padding:20px 22px">
+            <div style="font-family:Sora,sans-serif;font-size:14.5px;font-weight:600;color:#00C896;margin-bottom:8px">Sistema a la medida (esta propuesta)</div>
+            <p style="font-size:13.5px;line-height:1.5;color:#E6EEF6;margin:0">Pago único, código y datos propios, y el modelo real de la piedra: plancha, retazo y trazabilidad. La empresa elige según sus prioridades.</p>
+          </div>
+        </div>
+
+        <div data-reveal="" style="margin-top:24px;border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:24px 26px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#1EC8C8;margin-bottom:10px">Retorno de la inversión</div>
+          <p style="font-size:15.5px;line-height:1.6;color:#E6EEF6;margin:0;max-width:70ch;text-wrap:pretty">El módulo actúa sobre tres fuentes de pérdida medibles: compra duplicada de material por falta de visibilidad, tiempo de operario invertido en localizar producto entre sedes, y descuadre de existencias no detectado. La magnitud real de cada una solo puede establecerse con los datos del primer trimestre de operación del sistema. En el apartado de escalabilidad se presentan dos escenarios de referencia con sus supuestos explícitos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="objeto" data-screen-label="01 Objeto" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">01</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Objeto</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 28px;color:#fff;max-width:26ch">Objeto</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 20px;max-width:66ch;text-wrap:pretty">Análisis, diseño, desarrollo, implementación y puesta en operación del Módulo 1 — Control de Bodega y Almacén del Sistema de Gestión Integral de D'Mármol &amp; Granito S.A.S., incluyendo la contratación y configuración de la infraestructura tecnológica, la estructura de usuarios y permisos de la totalidad de la operación, la capacitación del personal y la documentación técnica y de uso.</p>
+        <p data-reveal="" style="font-size:16px;line-height:1.62;color:#93A7BC;margin:0 0 40px;max-width:66ch;text-wrap:pretty">La solución opera vía web sobre las cinco ubicaciones de la empresa —dos puntos de venta, dos bodegas y la casa de producción— con acceso desde computador, tablet y teléfono móvil. No incluye, sustituye ni interviene la facturación electrónica ni la contabilidad, funciones que permanecen en el sistema contable actual. La conciliación entre ambos se realiza mediante archivo exportable.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <div data-reveal="" style="background:#0A2540;padding:22px 18px">
+            <div data-count="" data-to="5" style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#1EC8C8;line-height:1">5</div>
+            <div style="font-size:13px;line-height:1.45;color:#93A7BC;margin-top:8px">ubicaciones en operación</div>
+          </div>
+          <div data-reveal="" style="background:#0A2540;padding:22px 18px">
+            <div data-count="" data-to="8" style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#1EC8C8;line-height:1">8</div>
+            <div style="font-size:13px;line-height:1.45;color:#93A7BC;margin-top:8px">semanas de desarrollo</div>
+          </div>
+          <div data-reveal="" style="background:#0A2540;padding:22px 18px">
+            <div data-count="" data-to="6" style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#1EC8C8;line-height:1">6</div>
+            <div style="font-size:13px;line-height:1.45;color:#93A7BC;margin-top:8px">frentes funcionales</div>
+          </div>
+          <div data-reveal="" style="background:#0A2540;padding:22px 18px">
+            <div data-count="" data-to="12" style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#1EC8C8;line-height:1">12</div>
+            <div style="font-size:13px;line-height:1.45;color:#93A7BC;margin-top:8px">sistemas evaluados</div>
+          </div>
+          <div data-reveal="" style="background:#0A2540;padding:22px 18px">
+            <div data-count="" data-to="3" style="font-family:'IBM Plex Mono',monospace;font-size:32px;font-weight:500;color:#1EC8C8;line-height:1">3</div>
+            <div style="font-size:13px;line-height:1.45;color:#93A7BC;margin-top:8px">meses de garantía</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sistema" data-screen-label="02 Marco del sistema" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">02</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Marco del sistema</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 28px;color:#fff;max-width:28ch;text-wrap:balance">Marco del sistema y ubicación del presente módulo</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 40px;max-width:66ch;text-wrap:pretty">El Módulo 1 no es una solución aislada: corresponde a la primera etapa de un sistema propio de cuatro módulos, cuya arquitectura, modelo de datos y esquema de seguridad se encuentran diseñados en su totalidad, de modo que cada etapa posterior se construya sobre una base ya instalada y sin retrabajo. La contratación de este módulo no obliga ni condiciona la de los siguientes.</p>
+        <div style="display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;background:linear-gradient(100deg,rgba(30,200,200,.12),rgba(37,99,235,.06) 60%,transparent);border-left:3px solid #1EC8C8;padding:24px">
+            <div style="flex:0 0 40px;font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:500;color:#1EC8C8;line-height:1">01</div>
+            <div style="flex:1 1 300px;min-width:0">
+              <div style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#fff;margin-bottom:7px">Bodega y almacén</div>
+              <div style="font-size:14.5px;line-height:1.55;color:#93A7BC">Infraestructura, usuarios y permisos de toda la operación, catálogo, identificación, movimientos, existencias, conteo y reportes.</div>
+            </div>
+            <div style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#071A2E;background:#1EC8C8;padding:7px 11px;border-radius:2px;animation:ndBlink 3.6s ease-in-out infinite">Objeto de esta oferta</div>
+          </div>
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;background:#071A2E;border-left:3px solid rgba(255,255,255,.12);padding:24px">
+            <div style="flex:0 0 40px;font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:300;color:#93A7BC;line-height:1">02</div>
+            <div style="flex:1 1 300px;min-width:0">
+              <div style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#E6EEF6;margin-bottom:7px">Cotización y seguimiento comercial</div>
+              <div style="font-size:14.5px;line-height:1.55;color:#93A7BC">Cotizador de mesón por metro lineal, listas de precios por tipo de cliente, control de descuentos, clientes y seguimiento comercial.</div>
+            </div>
+            <div style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;border:1px solid rgba(255,255,255,.16);padding:6px 11px;border-radius:2px">Se cotiza aparte</div>
+          </div>
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;background:#071A2E;border-left:3px solid rgba(255,255,255,.12);padding:24px">
+            <div style="flex:0 0 40px;font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:300;color:#93A7BC;line-height:1">03</div>
+            <div style="flex:1 1 300px;min-width:0">
+              <div style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#E6EEF6;margin-bottom:7px">Producción</div>
+              <div style="font-size:14.5px;line-height:1.55;color:#93A7BC">Órdenes de producción, cinco estados, control de calidad, reproceso y merma, exportación hacia la maquinaria de corte.</div>
+            </div>
+            <div style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;border:1px solid rgba(255,255,255,.16);padding:6px 11px;border-radius:2px">Se cotiza aparte</div>
+          </div>
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;background:#071A2E;border-left:3px solid rgba(255,255,255,.12);padding:24px">
+            <div style="flex:0 0 40px;font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:300;color:#93A7BC;line-height:1">04</div>
+            <div style="flex:1 1 300px;min-width:0">
+              <div style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#E6EEF6;margin-bottom:7px">Despacho y entrega</div>
+              <div style="font-size:14.5px;line-height:1.55;color:#93A7BC">Despacho, cadena de custodia, acta de entrega con firma y operación en campo sin señal.</div>
+            </div>
+            <div style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;border:1px solid rgba(255,255,255,.16);padding:6px 11px;border-radius:2px">Se cotiza aparte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mercado" data-screen-label="03 Análisis de mercado" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">03</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Análisis de mercado</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 28px;color:#fff;max-width:28ch;text-wrap:balance">Análisis de mercado — 12 sistemas en 3 categorías</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 48px;max-width:66ch;text-wrap:pretty">Se evaluaron doce plataformas con operación real en Colombia, agrupadas por categoría técnica. Todas son soluciones sólidas y probadas: un sistema contable, un WMS de centro de distribución o un ERP configurable cubren muy bien la operación estándar de facturación, contabilidad e inventario. La diferencia no está en la calidad, sino en el encaje con este negocio —la plancha como objeto individual, el retazo vendible y la cotización por metro lineal—. El comparativo se ofrece para elegir con información, no para descartar a ningún proveedor.</p>
+
+        <div data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#0A2540;padding:26px 24px;margin-bottom:44px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:12px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">Costo del primer año — alternativas de gestión integral</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Millones de COP · piso → techo estimado</div>
+          </div>
+          <p style="font-size:12.5px;line-height:1.5;color:#93A7BC;margin:0 0 22px;max-width:74ch">Se grafican las categorías B y C (WMS y ERP), que abordan la gestión integral a gran escala. El software contable (categoría A, desde ~$40.000/mes) queda por debajo de esta escala y cubre muy bien la operación estándar; lo específico de la piedra —plancha individual, retazo vendible y cotización por metro lineal— se detalla en las tablas siguientes. La columna derecha expresa cuántas veces más que el Módulo 1 cuesta cada alternativa, para leer la escala de un vistazo.</p>
+          <div style="display:flex;gap:10px;align-items:flex-end;padding-bottom:9px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,.12);font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC">
+            <div style="flex:0 0 168px;min-width:0">Sistema</div>
+            <div style="flex:1 1 200px;min-width:0">Rango estimado · año 1</div>
+            <div style="flex:0 0 116px;min-width:0;text-align:right">Costo COP</div>
+            <div style="flex:0 0 78px;min-width:0;text-align:right;color:#E6EEF6">Veces Mód. 1</div>
+          </div>
+          <div data-bars="" style="display:flex;flex-direction:column;gap:14px">
+            <sc-for list="{{ barras }}" as="b" hint-placeholder-count="8">
+              <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+                <div style="flex:0 0 168px;min-width:0;font-size:13px;color:#E6EEF6;line-height:1.3">{{ b.nombre }}</div>
+                <div style="flex:1 1 200px;min-width:0;height:22px;position:relative;background:rgba(255,255,255,.05)">
+                  <div data-bar="" data-w="{{ b.techo }}" style="position:absolute;top:0;left:0;height:100%;width:0%;background:repeating-linear-gradient(115deg,rgba(147,167,188,.22) 0 6px,transparent 6px 12px);transition:width 1.5s cubic-bezier(.16,1,.3,1)"></div>
+                  <div data-bar="" data-w="{{ b.piso }}" style="position:absolute;top:0;left:0;height:100%;width:0%;min-width:4px;background:{{ b.color }};transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div>
+                </div>
+                <div style="flex:0 0 116px;min-width:0;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#E6EEF6;white-space:nowrap;font-variant-numeric:tabular-nums">{{ b.sub }}</div>
+                <div style="flex:0 0 78px;min-width:0;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:600;color:{{ b.color }};white-space:nowrap">{{ b.mult }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div aria-hidden="true" style="display:flex;gap:10px;align-items:flex-start;margin-top:16px">
+            <div style="flex:0 0 168px;min-width:0"></div>
+            <div style="flex:1 1 200px;min-width:0;position:relative;height:30px">
+              <div style="position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.16)"></div>
+              <sc-for list="{{ pesoTicks }}" as="t" hint-placeholder-count="5">
+                <div style="position:absolute;left:{{ t.left }}%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <span style="width:1px;height:7px;background:rgba(255,255,255,.3)"></span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#93A7BC;white-space:nowrap">{{ t.txt }}</span>
+                </div>
+              </sc-for>
+            </div>
+            <div style="flex:0 0 116px;min-width:0"></div>
+            <div style="flex:0 0 78px;min-width:0"></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:6px;font-size:11.5px;color:#93A7BC">
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:10px;background:#2563EB;border-radius:2px"></span>Piso: mínimo del rango</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:10px;border-radius:2px;background:repeating-linear-gradient(115deg,rgba(147,167,188,.5) 0 5px,transparent 5px 10px),rgba(255,255,255,.05)"></span>Techo: máximo del rango</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:#5F7186">Escala 0 – $832M · millones de COP</span>
+          </div>
+          <div style="margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;line-height:1.55;color:#93A7BC">Cada software listado debe cotizarse por separado con su proveedor: el precio final puede subir o bajar respecto de estos rangos base de mercado según usuarios, módulos y condiciones. Cifras de WMS y ERP en orden de magnitud, sujetas a cotización directa; las de ERP corresponden a implementación y no incluyen su licencia mensual recurrente. El valor de Neodysk es desarrollo del Módulo 1 en pago único; a él se suma la nube (USD 50–65/mes) que corre por cuenta de la empresa en cualquier alternativa, y el soporte posterior opcional. Aun sumando esos recurrentes, el primer año se mantiene muy por debajo del piso de las alternativas graficadas.</div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:40px">
+          <sc-for list="{{ familias }}" as="f" hint-placeholder-count="3">
+            <div data-reveal="">
+              <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;margin-bottom:10px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#071A2E;background:#00C896;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;border-radius:2px">{{ f.categoria }}</span>
+                <span style="font-family:Sora,sans-serif;font-size:19px;font-weight:500;color:#fff">{{ f.nombre }}</span>
+              </div>
+              <p style="font-size:14.5px;line-height:1.55;color:#93A7BC;margin:0 0 18px;max-width:70ch">{{ f.descripcion }}</p>
+              <div style="border:1px solid rgba(255,255,255,.1);overflow-x:auto">
+                <div style="display:grid;grid-template-columns:1.5fr 1.3fr 1.5fr 1fr;gap:0;min-width:620px">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">{{ f.c0 }}</div>
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">{{ f.c1 }}</div>
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">{{ f.c2 }}</div>
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1);text-align:right">{{ f.c3 }}</div>
+                  <sc-for list="{{ f.filas }}" as="r" hint-placeholder-count="4">
+                    <div data-row="" style="font-size:14px;color:#fff;padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s ease">{{ r.a }}</div>
+                    <div data-row="" style="font-size:13.5px;color:#93A7BC;padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s ease">{{ r.b }}</div>
+                    <div data-row="" style="font-size:13.5px;color:#93A7BC;padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s ease">{{ r.c }}</div>
+                    <div data-row="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1EC8C8;padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);text-align:right;transition:background .3s ease">{{ r.d }}</div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div data-reveal="" style="margin-top:44px;border-left:2px solid #00C896;background:rgba(0,200,150,.06);padding:22px 24px">
+          <p style="font-size:16px;line-height:1.6;color:#E6EEF6;margin:0;max-width:68ch;text-wrap:pretty">Este análisis se entrega como insumo técnico de decisión. Cada categoría resuelve bien el problema para el que fue diseñada y la elección depende de las prioridades de la empresa. Neodysk puede acompañar técnicamente la evaluación de cualquiera de las alternativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alcance" data-screen-label="04 Alcance funcional" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">04</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Alcance funcional</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 12px;color:#fff;max-width:26ch">Alcance funcional del módulo</h2>
+        <p data-reveal="" style="font-size:15px;line-height:1.6;color:#93A7BC;margin:0 0 36px;max-width:60ch">Seis frentes. Cada uno se entrega en operación, no como maqueta.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <sc-for list="{{ grupos }}" as="g" hint-placeholder-count="6">
+            <div data-reveal="" data-card="" style="background:#071A2E;padding:26px 24px;transition:background .4s ease,transform .4s ease">
+              <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:#1EC8C8;border:1px solid rgba(30,200,200,.4);width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:2px">{{ g.clave }}</span>
+                <span style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#fff">{{ g.titulo }}</span>
+              </div>
+              <p style="font-size:14.5px;line-height:1.55;color:#93A7BC;margin:0 0 18px;font-style:italic">{{ g.resumen }}</p>
+              <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5">
+                  <li style="display:flex;gap:10px;font-size:14px;line-height:1.5;color:#E6EEF6">
+                    <span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:12px;padding-top:2px">—</span>
+                    <span style="min-width:0">{{ it }}</span>
+                  </li>
+                </sc-for>
+              </ul>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="criterios" data-screen-label="05 Criterios de aceptación" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">05</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Aceptación</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:26ch">Criterios de aceptación</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 34px;max-width:66ch">La aceptación se verifica contra condiciones medibles, no por apreciación subjetiva.</p>
+        <div style="display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <sc-for list="{{ criterios }}" as="c" hint-placeholder-count="5">
+            <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:#0A2540;padding:20px 22px">
+              <span data-check="" style="flex:0 0 auto;width:24px;height:24px;border:1px solid rgba(0,200,150,.45);border-radius:2px;display:inline-flex;align-items:center;justify-content:center;color:#00C896;font-size:13px;opacity:.25;transition:opacity .5s ease,background .5s ease">✓</span>
+              <span style="flex:1 1 280px;min-width:0;font-size:15.5px;line-height:1.5;color:#E6EEF6">{{ c.texto }}</span>
+              <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;color:#00C896;background:rgba(0,200,150,.1);padding:6px 12px;border-radius:2px">{{ c.metrica }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecnica" data-screen-label="06 Especificaciones técnicas" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">06</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Ingeniería</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 36px;color:#fff;max-width:26ch">Especificaciones técnicas</h2>
+        <div style="display:flex;flex-direction:column;gap:30px">
+          <sc-for list="{{ bloques }}" as="bl" hint-placeholder-count="4">
+            <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px;border-top:1px solid rgba(255,255,255,.12);padding-top:22px">
+              <div style="flex:0 0 200px;min-width:0">
+                <div style="font-family:Sora,sans-serif;font-size:18px;font-weight:500;color:#fff;position:sticky;top:110px">{{ bl.titulo }}</div>
+              </div>
+              <ul style="flex:1 1 340px;min-width:0;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px">
+                <sc-for list="{{ bl.items }}" as="it" hint-placeholder-count="5">
+                  <li style="display:flex;gap:12px;font-size:15px;line-height:1.55;color:#E6EEF6">
+                    <span style="flex:0 0 auto;width:5px;height:5px;background:#2563EB;border-radius:50%;margin-top:8px"></span>
+                    <span style="min-width:0">{{ it }}</span>
+                  </li>
+                </sc-for>
+              </ul>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arquitectura" data-screen-label="07 Arquitectura" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">07</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Arquitectura</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:28ch;text-wrap:balance">Cómo está compuesto el sistema</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 40px;max-width:66ch;text-wrap:pretty">La solución se construye por capas, con una regla que la protege en el tiempo: el negocio —las reglas de la piedra, el retazo y el inventario— vive aislado en el núcleo y no depende de ninguna tecnología externa. Eso permite cambiar de proveedor de nube o de interfaz sin reescribir las reglas, y agregar módulos sin tocar lo ya entregado.</p>
+
+        <div data-anim="" style="display:flex;flex-wrap:wrap;gap:22px;margin-bottom:44px">
+          <div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#93A7BC">
+              <span>Arquitectura limpia por capas</span><span style="flex:1 1 auto;height:1px;background:rgba(255,255,255,.12)"></span><span style="color:#8B5CF6">núcleo protegido</span>
+            </div>
+
+            <div data-pop="" style="opacity:0;transform:scale(.94);transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1);position:relative;width:100%;max-width:452px;margin:0 auto;aspect-ratio:1/1">
+              <div style="position:absolute;inset:0;border-radius:20px;border:1.5px solid rgba(255,255,255,.1);border-top:2px solid #1EC8C8;border-bottom:2px solid #00C896;background:rgba(30,200,200,.04)"></div>
+
+              <div style="position:absolute;top:4%;left:50%;transform:translateX(-50%);width:76%;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#1EC8C8;margin-bottom:3px">Capa 1 · Presentación</div>
+                <div style="font-size:12px;line-height:1.35;color:#E6EEF6;text-wrap:balance">Pantallas y formularios que usa el personal en cada sede</div>
+              </div>
+
+              <div style="position:absolute;bottom:4%;left:50%;transform:translateX(-50%);width:80%;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#00C896;margin-bottom:3px">Capa base · Infraestructura</div>
+                <div style="font-size:12px;line-height:1.35;color:#E6EEF6;text-wrap:balance">Nube, base de datos y seguridad: la conexión con el mundo real</div>
+              </div>
+
+              <div style="position:absolute;inset:19%;border-radius:15px;border:1.5px solid rgba(37,99,235,.55);background:#0A2540"></div>
+
+              <div style="position:absolute;top:21.5%;left:50%;transform:translateX(-50%);width:66%;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#5B8DEF;margin-bottom:3px">Capa 2 · Aplicación</div>
+                <div style="font-size:11.5px;line-height:1.35;color:#93A7BC;text-wrap:balance">Casos de uso y permisos: orquesta las reglas y autoriza cada acción</div>
+              </div>
+
+              <div style="position:absolute;inset:35%;border-radius:12px;border:1.5px solid #8B5CF6;background:radial-gradient(circle at 50% 40%,rgba(139,92,246,.34),rgba(139,92,246,.14));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6px;box-shadow:0 0 42px rgba(139,92,246,.28)">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#C4B5FD;margin-bottom:4px">Núcleo</div>
+                <div style="font-family:Sora,sans-serif;font-size:15px;font-weight:600;color:#fff;line-height:1.05">Dominio</div>
+                <div style="font-size:10px;line-height:1.3;color:#DED8FB;margin-top:5px;text-wrap:balance">Las reglas del negocio: plancha, retazo, movimiento y saldo</div>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:flex-start;gap:9px;border:1px solid rgba(139,92,246,.35);background:rgba(139,92,246,.07);padding:12px 14px">
+              <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#8B5CF6;line-height:1.35">→</span>
+              <p style="margin:0;font-size:12.5px;line-height:1.5;color:#C9D6E5;text-align:left">Regla de oro: las capas externas dependen del núcleo, nunca al revés. El dominio no conoce la nube ni la interfaz, así que cambiar de proveedor o de pantalla no obliga a reescribir las reglas del negocio.</p>
+            </div>
+          </div>
+          <div data-reveal="" style="flex:1 1 250px;min-width:0;border:1px solid rgba(255,255,255,.1);background:#0A2540;padding:22px 22px;align-self:flex-start">
+            <div style="font-family:Sora,sans-serif;font-size:15px;font-weight:600;color:#fff;margin-bottom:16px">Invariantes que no se negocian</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px">
+              <sc-for list="{{ invariantes }}" as="iv" hint-placeholder-count="5">
+                <li style="display:flex;gap:10px;font-size:13.5px;line-height:1.5;color:#E6EEF6">
+                  <span style="flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:#8B5CF6;margin-top:7px"></span>
+                  <span style="min-width:0;text-align:left">{{ iv }}</span>
+                </li>
+              </sc-for>
+            </ul>
+          </div>
+        </div>
+
+        <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:48px">
+          <sc-for list="{{ stackChips }}" as="ch" hint-placeholder-count="12">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#93A7BC;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.02);padding:7px 12px;border-radius:3px">{{ ch }}</span>
+          </sc-for>
+        </div>
+
+        <div data-anim="" style="border:1px solid rgba(255,255,255,.1);background:#0A2540;padding:26px 24px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:20px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">Distribución del esfuerzo del proyecto</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Referencial · % del total</div>
+          </div>
+          <div style="display:flex;width:100%;height:26px;border-radius:3px;overflow:hidden;background:rgba(255,255,255,.05)">
+            <sc-for list="{{ esfuerzo }}" as="e" hint-placeholder-count="7">
+              <div data-grow="" data-prop="width" data-gw="{{ e.p }}" title="{{ e.t }} · {{ e.p }}%" style="width:0;height:100%;background:{{ e.c }};transition:width 1.1s cubic-bezier(.16,1,.3,1)"></div>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:18px">
+            <sc-for list="{{ esfuerzo }}" as="e" hint-placeholder-count="7">
+              <span style="display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:#93A7BC">
+                <span style="width:11px;height:11px;border-radius:2px;background:{{ e.c }};flex:0 0 auto"></span>{{ e.t }}<span style="font-family:'IBM Plex Mono',monospace;color:#fff">{{ e.p }}%</span>
+              </span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="escala" data-screen-label="08 Escalabilidad" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">08</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Escalabilidad</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:28ch;text-wrap:balance">Escalabilidad y análisis para la gerencia</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 12px;max-width:66ch;text-wrap:pretty">Este módulo se estructura como un activo de la empresa: se paga una vez, la titularidad del código y de los datos queda en la empresa, y el sistema admite crecer por módulos sobre la misma base sin rehacer lo entregado ni licenciar por usuario. El contraste con el modelo de licencia recurrente se cuantifica en los tableros siguientes.</p>
+        <p data-reveal="" style="font-size:15px;line-height:1.6;color:#93A7BC;margin:0 0 46px;max-width:66ch;text-wrap:pretty">Los siguientes cinco tableros presentan los datos con los que puede evaluarse la decisión: costo acumulado a tres años, cobertura funcional comparada, cobertura y estimación de inversión por módulo, distribución del valor y proyección de retorno.</p>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px;margin-bottom:26px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">1 · Costo total de propiedad a 3 años</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Gasto acumulado · millones de COP</div>
+          </div>
+          <p style="font-size:13px;line-height:1.5;color:#93A7BC;margin:0 0 22px;max-width:72ch">Cada barra es el gasto <strong style="color:#E6EEF6;font-weight:500">sumado hasta ese año</strong>, no un pago anual. En Neodysk, el grueso es el pago único del primer año; después solo se suma la nube y el soporte. En el mercado, la licencia se vuelve a pagar cada año, por eso el total sigue subiendo.</p>
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <sc-for list="{{ tco }}" as="s" hint-placeholder-count="2">
+              <div>
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                  <span style="width:12px;height:12px;border-radius:2px;background:{{ s.color }};flex:0 0 auto"></span>
+                  <span style="font-family:Sora,sans-serif;font-size:14.5px;font-weight:500;color:#fff">{{ s.serie }}</span>
+                </div>
+                <div style="font-size:12.5px;line-height:1.45;color:#93A7BC;margin:0 0 6px 22px;max-width:64ch">{{ s.nota }}</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A7BC;margin:0 0 12px 22px">$ {{ s.inicial }}M inicial · luego + $ {{ s.anual }}M / año</div>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <sc-for list="{{ s.barras }}" as="bar" hint-placeholder-count="3">
+                    <div style="display:flex;align-items:center;gap:12px">
+                      <span style="flex:0 0 52px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A7BC">{{ bar.anio }}</span>
+                      <div style="flex:1 1 0;min-width:0;height:18px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden">
+                        <div data-grow="" data-prop="width" data-gw="{{ bar.w }}" style="width:0;height:100%;background:{{ s.color }};border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div>
+                      </div>
+                      <span style="flex:0 0 70px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#fff">$ {{ bar.v }}M</span>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:12px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.12)">
+                  <span style="font-size:12px;color:#93A7BC">Total sumado en 3 años</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:600;color:{{ s.color }}">$ {{ s.total }}M</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="margin-top:20px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;line-height:1.5;color:#93A7BC">Cifras de mercado referenciales de un WMS de gama media; cada proveedor cotiza por separado y el valor puede variar. El propósito es mostrar el orden de magnitud de la diferencia, no un precio en firme.</div>
+        </div>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px;margin-bottom:26px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:20px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">2 · Qué resuelve cada opción</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Cobertura de las necesidades reales</div>
+          </div>
+          <div style="overflow-x:auto">
+            <div style="min-width:560px">
+              <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);gap:0;border-bottom:1px solid rgba(255,255,255,.1)">
+                <div style="padding:10px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC">Necesidad</div>
+                <sc-for list="{{ cobCols }}" as="c" hint-placeholder-count="4">
+                  <div style="padding:10px 8px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#E6EEF6">{{ c }}</div>
+                </sc-for>
+              </div>
+              <sc-for list="{{ cobertura }}" as="row" hint-placeholder-count="7">
+                <div style="display:grid;grid-template-columns:1.7fr repeat(4,1fr);gap:0;border-bottom:1px solid rgba(255,255,255,.05)">
+                  <div style="padding:12px;font-size:13px;color:#E6EEF6;line-height:1.35">{{ row.need }}</div>
+                  <sc-for list="{{ row.celdas }}" as="cd" hint-placeholder-count="4">
+                    <div style="padding:12px 8px;display:flex;align-items:center;justify-content:center">
+                      <span data-pop="" style="opacity:0;transform:scale(.3);transition:opacity .45s ease,transform .45s cubic-bezier(.16,1,.3,1);width:15px;height:15px;border-radius:50%;background:{{ cd.bg }};border:1.5px solid {{ cd.b }};box-shadow:0 0 0 0 transparent"></span>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:18px;font-size:12px;color:#93A7BC">
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:50%;background:#00C896"></span>Lo resuelve de fábrica</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:50%;background:rgba(224,168,59,.25);border:1.5px solid #E0A83B"></span>Parcial o con desarrollo a medida</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:50%;border:1.5px solid rgba(255,255,255,.22)"></span>No lo resuelve</span>
+          </div>
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;line-height:1.55;color:#93A7BC">Las necesidades listadas son las específicas de la operación en piedra. En facturación electrónica, contabilidad e inventario estándar, los sistemas de mercado son plenamente capaces; el comparativo mira únicamente el encaje con este negocio en particular.</div>
+        </div>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px;margin-bottom:26px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:22px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">3 · Cómo escala el sistema, módulo a módulo</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Cobertura acumulada · inversión estimada</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <sc-for list="{{ roadmap }}" as="r" hint-placeholder-count="4">
+              <div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between;margin-bottom:7px">
+                  <span style="font-family:Sora,sans-serif;font-size:14px;font-weight:500;color:#fff">{{ r.nombre }}</span>
+                  <span style="display:inline-flex;align-items:baseline;gap:10px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#93A7BC;white-space:nowrap;font-variant-numeric:tabular-nums">{{ r.est }}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:{{ r.color }}">{{ r.pct }}%</span></span>
+                </div>
+                <div style="height:14px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden">
+                  <div data-grow="" data-prop="width" data-gw="{{ r.pct }}" style="width:0;height:100%;background:{{ r.color }};border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div>
+                </div>
+                <div style="font-size:12.5px;line-height:1.45;color:#93A7BC;margin-top:6px;text-align:left">{{ r.add }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="margin-top:18px;padding:14px 16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03)">
+            <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:8px">
+              <span style="font-family:Sora,sans-serif;font-size:14px;font-weight:500;color:#fff">Sistema completo · los cuatro módulos</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#E0A83B;white-space:nowrap;font-variant-numeric:tabular-nums">$ 30M</span>
+            </div>
+            <div style="font-size:12.5px;line-height:1.55;color:#93A7BC">El Módulo 1 concentra la mitad de la inversión total porque incluye la arquitectura completa: infraestructura, modelo de datos, autenticación, capa de dominio y componentes base. Los módulos siguientes se construyen sobre esa base ya pagada, por lo que su costo marginal es menor. El techo del sistema completo es de $ 30.000.000 y no supera ese valor. Solo el Módulo 1 tiene valor firme en esta propuesta; los Módulos 2 a 4 son estimaciones sujetas a definición de alcance y no constituyen oferta, pero sí acotan el compromiso máximo.</div>
+          </div>
+          <div style="margin-top:14px;padding:12px 14px;border-left:2px solid #1EC8C8;background:rgba(30,200,200,.06);font-size:12.5px;line-height:1.5;color:#E6EEF6">Hoy se contrata el 25% del sistema. Cada módulo posterior se suma sobre la misma base ya instalada, sin retrabajo y sin obligación de continuidad.</div>
+        </div>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:20px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">4 · En qué se invierte el valor</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Distribución referencial de $ 15.000.000</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:13px">
+            <sc-for list="{{ valorComp }}" as="v" hint-placeholder-count="5">
+              <div style="display:flex;align-items:center;gap:12px">
+                <span style="flex:0 0 210px;min-width:0;font-size:13.5px;color:#E6EEF6">{{ v.t }}</span>
+                <div style="flex:1 1 0;min-width:0;height:16px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden">
+                  <div data-grow="" data-prop="width" data-gw="{{ v.p }}" style="width:0;height:100%;background:{{ v.c }};border-radius:2px;transition:width 1.1s cubic-bezier(.16,1,.3,1)"></div>
+                </div>
+                <span style="flex:0 0 44px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#fff">{{ v.p }}%</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div data-anim="" data-reveal="" style="border:1px solid rgba(255,255,255,.1);background:#071A2E;padding:26px 24px;margin-top:26px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff">5 · Proyección de retorno de la inversión</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#93A7BC">Beneficio acumulado · millones de COP</div>
+          </div>
+          <p style="font-size:13px;line-height:1.5;color:#93A7BC;margin:0 0 6px;max-width:76ch">Modelo de estimación, no una garantía de resultados. Cada barra es el ahorro acumulado desde la puesta en operación; la línea vertical marca la inversión de $ 15M. El punto donde la barra cruza esa línea es el punto de equilibrio: desde ahí el ahorro acumulado supera lo invertido.</p>
+          <p style="font-size:13px;line-height:1.5;color:#93A7BC;margin:0 0 22px;max-width:76ch">Los dos escenarios se diferencian solo en el ahorro mensual asumido. No se propone un escenario optimista: el conservador ya es suficiente para evaluar la decisión.</p>
+          <div style="display:flex;flex-direction:column;gap:26px">
+            <sc-for list="{{ roi.scen }}" as="s" hint-placeholder-count="2">
+              <div>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+                  <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                    <span style="width:11px;height:11px;border-radius:2px;background:{{ s.color }}"></span>
+                    <span style="font-family:Sora,sans-serif;font-size:14.5px;font-weight:500;color:#fff">Escenario {{ s.k }}</span>
+                    <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#93A7BC">ahorro asumido {{ s.mesTxt }} / mes</span>
+                  </div>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:{{ s.color }};border:1px solid {{ s.color }};border-radius:2px;padding:3px 9px;white-space:nowrap">Equilibrio {{ s.beTxt }}</span>
+                </div>
+                <div style="display:flex;flex-direction:column">
+                  <sc-for list="{{ s.hor }}" as="h" hint-placeholder-count="3">
+                    <div style="display:flex;align-items:stretch;gap:12px;height:32px">
+                      <span style="flex:0 0 74px;display:flex;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A7BC;white-space:nowrap">{{ h.m }}</span>
+                      <div style="flex:1 1 0;min-width:0;position:relative;display:flex;align-items:center">
+                        <div style="width:100%;height:20px;position:relative;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden">
+                          <div data-grow="" data-prop="width" data-gw="{{ h.w }}" style="width:0;height:100%;background:{{ s.color }};border-radius:2px;transition:width 1.2s cubic-bezier(.16,1,.3,1)"></div>
+                        </div>
+                        <div style="position:absolute;top:0;bottom:0;left:{{ roi.mark }}%;width:0;border-left:1.5px dashed #E0A83B;pointer-events:none"></div>
+                      </div>
+                      <span style="flex:0 0 96px;display:flex;align-items:center;justify-content:flex-end;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums">{{ h.v }}<span style="color:{{ h.okColor }};font-size:11px">{{ h.ok }}</span></span>
+                    </div>
+                  </sc-for>
+                  <div aria-hidden="true" style="display:flex;gap:12px;margin-top:2px">
+                    <span style="flex:0 0 74px"></span>
+                    <div style="flex:1 1 0;min-width:0;position:relative;height:26px">
+                      <div style="position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.16)"></div>
+                      <sc-for list="{{ roi.ticks }}" as="t" hint-placeholder-count="4">
+                        <div style="position:absolute;left:{{ t.left }}%;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:3px">
+                          <span style="width:1px;height:5px;background:rgba(255,255,255,.3)"></span>
+                          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#93A7BC;white-space:nowrap">{{ t.txt }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                    <span style="flex:0 0 96px"></span>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:18px;font-size:12px;color:#93A7BC">
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:0;height:14px;border-left:1.5px dashed #E0A83B"></span>Inversión $ 15M · línea de equilibrio</span>
+            <span style="font-family:'IBM Plex Mono',monospace;color:#5F7186">Escala 0 – $ 45M</span>
+          </div>
+          <div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:12.5px;line-height:1.55;color:#93A7BC">Supuestos del modelo: el ahorro mensual agrega tres conceptos —compra duplicada de material evitada por visibilidad de existencias, horas de operario recuperadas en la localización de producto entre sedes, y merma y descuadre detectados a tiempo—. El escenario conservador equivale aproximadamente a evitar una compra duplicada de plancha cada dos meses. Ninguna de las dos curvas puede validarse antes de tener datos: la medición real se obtiene del propio sistema al cierre del primer trimestre de operación, y esos reportes quedan disponibles para que la empresa contraste este modelo.</div>
+        </div>
+
+        <div data-reveal="" style="margin-top:44px;border-left:2px solid #00C896;background:rgba(0,200,150,.06);padding:24px 26px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#00C896;margin-bottom:12px">Síntesis técnica</div>
+          <p style="font-size:16px;line-height:1.62;color:#E6EEF6;margin:0;max-width:74ch;text-wrap:pretty">Las dos rutas son viables. Se diferencian en la estructura del costo —pago único por módulo frente a licencia anual recurrente—, en la titularidad del código y los datos, y en el grado de ajuste al modelo de la piedra. Una plataforma de mercado aporta madurez de producto y soporte de fábrica; el desarrollo propio aporta control y ajuste al proceso, y traslada a la empresa la responsabilidad de decidir su evolución. Los datos presentados en esta sección son los insumos para esa comparación; la ponderación entre ambos criterios corresponde a la empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plazo" data-screen-label="09 Plazo y cronograma" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">09</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Cronograma</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 24px;color:#fff;max-width:26ch">Plazo y cronograma</h2>
+        <p data-reveal="" style="font-size:17px;line-height:1.62;color:#E6EEF6;margin:0 0 44px;max-width:66ch;text-wrap:pretty">Plazo total: ocho (8) semanas calendario —dos meses— contadas desde el perfeccionamiento del acuerdo y el pago de la primera cuota, organizadas en cuatro fases quincenales. Cada fase concluye con una entrega demostrable en funcionamiento; la garantía corre a partir de la puesta en operación.</p>
+        <div style="position:relative;padding-left:34px">
+          <div data-timeline="" style="position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,#1EC8C8,#2563EB 55%,#00C896);transform:scaleY(0);transform-origin:top center;transition:transform 1.8s cubic-bezier(.16,1,.3,1)"></div>
+          <div style="display:flex;flex-direction:column;gap:34px">
+            <sc-for list="{{ hitos }}" as="h" hint-placeholder-count="4">
+              <div data-reveal="" style="position:relative">
+                <div style="position:absolute;left:-34px;top:4px;width:19px;height:19px;border-radius:50%;background:#071A2E;border:1px solid #1EC8C8;display:flex;align-items:center;justify-content:center">
+                  <span style="width:7px;height:7px;border-radius:50%;background:#1EC8C8"></span>
+                </div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#1EC8C8;margin-bottom:9px">{{ h.etiqueta }}</div>
+                <div style="font-size:16px;line-height:1.6;color:#E6EEF6;max-width:64ch;text-wrap:pretty">{{ h.detalle }}</div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div data-reveal="" data-gantt="" data-anim="" style="margin-top:58px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;margin-bottom:6px">
+            <h3 style="font-family:Sora,sans-serif;font-weight:500;font-size:20px;letter-spacing:-.015em;margin:0;color:#fff">Ruta del proyecto · septiembre → noviembre 2026</h3>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;color:#1EC8C8">Inicio 15 sep · 8 semanas de desarrollo</div>
+          </div>
+          <p style="font-size:14px;line-height:1.55;color:#93A7BC;margin:0 0 18px;max-width:78ch;text-wrap:pretty">Plan maestro con gestión de proyecto continua: cuatro fases quincenales, una entrega demostrable al cierre de cada una y los hitos de pago atados a avances verificables. El desarrollo termina el 10 de noviembre; el tramo de garantía que se muestra después es tiempo de acompañamiento incluido, no trabajo pendiente ni costo adicional.</p>
+          <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;padding:13px 16px;border-left:2px solid #E0A83B;background:rgba(224,168,59,.09);font-size:13px;line-height:1.5;color:#E6EEF6;max-width:80ch">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#E0A83B;flex:0 0 auto">Nota</span>
+            <span style="flex:1 1 260px;min-width:0">Esta propuesta cubre únicamente la <strong style="color:#fff;font-weight:600">Fase 1 · Módulo 1 (Bodega y Almacén)</strong>. Diciembre a febrero corresponde solo al periodo de garantía incluido de 3 meses; los Módulos 2, 3 y 4 se cotizan por separado más adelante.</span>
+          </div>
+          <div style="overflow-x:auto;border:1px solid rgba(255,255,255,.1);background:#0A2540;max-width:100%">
+            <div style="min-width:640px;padding-bottom:6px">
+              <div style="display:flex;border-bottom:1px solid rgba(255,255,255,.1)">
+                <div style="flex:0 0 clamp(120px,24%,188px);padding:11px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;min-width:0">Fase</div>
+                <div style="flex:1 1 0;display:flex;min-width:0">
+                  <sc-for list="{{ meses }}" as="m" hint-placeholder-count="6">
+                    <div style="flex:{{ m.g }} 1 0;min-width:0;padding:11px 4px;border-left:1px solid rgba(255,255,255,.08);text-align:center;overflow:hidden">
+                      <div style="font-family:Sora,sans-serif;font-size:12px;font-weight:500;color:#E6EEF6">{{ m.n }}</div>
+                      <div style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;color:#93A7BC;margin-top:2px;white-space:nowrap">{{ m.r }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="display:flex;border-bottom:1px solid rgba(255,255,255,.08)">
+                <div style="flex:0 0 clamp(120px,24%,188px);min-width:0"></div>
+                <div style="flex:1 1 0;display:flex;min-width:0;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase">
+                  <div style="flex:56 1 0;min-width:0;padding:7px 8px;text-align:center;color:#1EC8C8;background:rgba(30,200,200,.08);overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Desarrollo · 15 sep – 10 nov</div>
+                  <div style="flex:92 1 0;min-width:0;padding:7px 8px;text-align:center;color:#00C896;background:rgba(0,200,150,.06);border-left:1px dashed rgba(0,200,150,.4);overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Garantía incluida · sin desarrollo</div>
+                </div>
+              </div>
+              <div style="display:flex;border-bottom:1px solid rgba(255,255,255,.08)">
+                <div style="flex:0 0 clamp(120px,24%,188px);padding:8px 14px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;display:flex;align-items:center;min-width:0">Hitos y pagos</div>
+                <div style="flex:1 1 0;position:relative;min-width:0;height:80px">
+                  <div style="position:absolute;left:0;right:0;top:40px;height:1px;background:rgba(255,255,255,.14)"></div>
+                  <sc-for list="{{ milestones }}" as="k" hint-placeholder-count="5">
+                    <div data-gmark="" data-gl="{{ k.left }}" data-dtr="translateX(-50%) rotate(45deg)" style="position:absolute;left:0;top:0;bottom:0;width:0">
+                      <div data-diamond="" style="position:absolute;left:0;top:35px;width:11px;height:11px;background:{{ k.color }};transform:translateX(-50%) rotate(45deg) scale(.2);opacity:0;border:1px solid #0A2540;box-shadow:0 0 0 3px rgba(30,200,200,.12);transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .5s ease"></div>
+                      <div style="position:absolute;{{ k.pos }};{{ k.shift }};text-align:{{ k.align }};font-family:'IBM Plex Mono',monospace;font-size:10px;color:{{ k.color }};letter-spacing:.02em;white-space:nowrap">{{ k.fecha }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <sc-for list="{{ fases }}" as="p" hint-placeholder-count="7">
+                <div style="display:flex;align-items:stretch;border-top:1px solid rgba(255,255,255,.05)">
+                  <div style="flex:0 0 clamp(120px,24%,188px);padding:11px 14px;min-width:0">
+                    <div style="font-size:12.5px;font-weight:500;color:#fff;line-height:1.25;text-wrap:pretty">{{ p.nombre }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:#93A7BC;margin-top:3px;white-space:nowrap">{{ p.dur }} · {{ p.rango }}</div>
+                  </div>
+                  <div style="flex:1 1 0;position:relative;min-width:0;padding:9px 0">
+                    <div data-gbar="" data-gl="{{ p.left }}" data-gw="{{ p.width }}" title="{{ p.nombre }} · {{ p.rango }}" style="position:absolute;top:9px;bottom:9px;left:0;width:0;background:{{ p.bg }};border-radius:3px;display:flex;align-items:center;overflow:hidden;transition:width 1.1s cubic-bezier(.16,1,.3,1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)">
+                      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:{{ p.txt }};padding:0 10px;white-space:nowrap">{{ p.inbar }}</span>
+                    </div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          <div data-anim="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;margin-top:18px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+            <sc-for list="{{ milestones }}" as="k" hint-placeholder-count="5">
+              <div data-pop="" style="background:#071A2E;padding:14px 15px;border-top:2px solid {{ k.color }};opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s cubic-bezier(.16,1,.3,1)">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:{{ k.color }};letter-spacing:.04em;margin-bottom:5px">{{ k.fecha }}</div>
+                <div style="font-size:12.5px;line-height:1.35;color:#E6EEF6;text-wrap:pretty">{{ k.texto }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px 18px;margin-top:16px;font-size:11.5px;color:#93A7BC">
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:9px;border-radius:2px;background:linear-gradient(90deg,#1EC8C8,#2563EB)"></span>Desarrollo · 4 fases quincenales</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:9px;border-radius:2px;background:#00C896"></span>Puesta en operación</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:9px;border-radius:2px;background:repeating-linear-gradient(115deg,rgba(0,200,150,.6) 0 5px,transparent 5px 10px),rgba(0,200,150,.14)"></span>Garantía incluida (3 meses)</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:22px;height:9px;border-radius:2px;background:#8B5CF6"></span>Gestión de proyecto continua</span>
+            <span style="display:inline-flex;align-items:center;gap:8px"><span style="width:9px;height:9px;background:#1EC8C8;transform:rotate(45deg)"></span>Hito / pago</span>
+          </div>
+        </div>
+
+        <h3 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:20px;letter-spacing:-.015em;margin:56px 0 8px;color:#fff">Riesgos y mitigación</h3>
+        <p data-reveal="" style="font-size:14px;line-height:1.55;color:#93A7BC;margin:0 0 20px;max-width:76ch;text-wrap:pretty">Registro de riesgos con probabilidad e impacto estimados y el control técnico asociado a cada uno. Se mantiene actualizado durante la ejecución; los riesgos de datos y de adopción son los que históricamente determinan el resultado de una implantación de inventario.</p>
+        <div data-reveal="" style="border:1px solid rgba(255,255,255,.1);overflow-x:auto">
+          <div style="display:grid;grid-template-columns:1.5fr .5fr .5fr 2.2fr;min-width:760px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">Riesgo</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">Prob.</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">Impacto</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:12px 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)">Control técnico</div>
+            <sc-for list="{{ riesgos }}" as="r" hint-placeholder-count="10">
+              <div data-row="" style="padding:14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s">
+                <div style="font-size:13.5px;line-height:1.35;color:#fff">{{ r.riesgo }}</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#5F7186;margin-top:5px">{{ r.cat }}</div>
+              </div>
+              <div data-row="" style="padding:14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s">
+                <span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:{{ r.color }};white-space:nowrap">
+                  <span style="width:6px;height:6px;border-radius:50%;background:{{ r.color }}"></span>{{ r.prob }}
+                </span>
+              </div>
+              <div data-row="" style="padding:14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#E6EEF6;white-space:nowrap">{{ r.imp }}</div>
+              <div data-row="" style="font-size:13px;line-height:1.5;color:#93A7BC;padding:14px;border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s">{{ r.mitigacion }}</div>
+            </sc-for>
+          </div>
+        </div>
+
+        <h3 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:20px;letter-spacing:-.015em;margin:52px 0 8px;color:#fff">Infraestructura: nube frente a servidor propio</h3>
+        <p data-reveal="" style="font-size:14px;line-height:1.55;color:#93A7BC;margin:0 0 20px;max-width:76ch;text-wrap:pretty">La propuesta se despliega en nube porque la empresa no cuenta hoy con servidores propios ni con la infraestructura de soporte que estos requieren —energía regulada, red administrada y personal para operarlos—. No es una preferencia técnica del proveedor: es la consecuencia de la infraestructura disponible. El sistema no queda atado a esa decisión; la aplicación y la base de datos son estándar y pueden migrarse a un servidor propio más adelante sin reescribir código. A continuación el orden de magnitud de cada opción, para que la comparación sea verificable.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <div data-reveal="" style="background:#071A2E;padding:24px 22px;border-top:2px solid #1EC8C8">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#1EC8C8;margin-bottom:10px">Opción A · nube administrada</div>
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff;margin-bottom:4px">Supabase + Vercel</div>
+            <div style="display:flex;align-items:baseline;gap:8px;margin:12px 0 14px">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:#fff;line-height:1;font-variant-numeric:tabular-nums">$ 160.000</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#93A7BC">/ mes aprox.</span>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#93A7BC;margin-bottom:14px">≈ US$40 · $ 1.9M al año · inversión inicial $0</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Respaldo, parcheo, certificados y disponibilidad a cargo del proveedor</span></li>
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Acceso entre las cinco sedes sin exponer red interna</span></li>
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Requiere conexión a internet en cada sede</span></li>
+            </ul>
+          </div>
+          <div data-reveal="" style="background:#071A2E;padding:24px 22px;border-top:2px solid #93A7BC">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#93A7BC;margin-bottom:10px">Opción B · servidor propio</div>
+            <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:500;color:#fff;margin-bottom:4px">Equipo en sede principal</div>
+            <div style="display:flex;align-items:baseline;gap:8px;margin:12px 0 14px">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:#fff;line-height:1;font-variant-numeric:tabular-nums">$ 9M – $ 18M</span>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#93A7BC;margin-bottom:14px">Inversión inicial · más $ 1.5M–$ 3M al año de operación</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Servidor de gama entrada con disco redundante: $ 6M–$ 12M</span></li>
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">UPS, gabinete e instalación eléctrica regulada: $ 2M–$ 4M</span></li>
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">IP fija, certificado y configuración de acceso remoto: $ 1M–$ 2M</span></li>
+              <li style="display:flex;gap:9px;font-size:13px;line-height:1.5;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Recurrente: energía, respaldo externo y administración del equipo</span></li>
+            </ul>
+          </div>
+        </div>
+        <p data-reveal="" style="font-size:13px;line-height:1.55;color:#93A7BC;margin:16px 0 0;max-width:78ch;text-wrap:pretty">Valores de referencia de mercado en Colombia a septiembre de 2026, sujetos a cotización. La opción B no está incluida en esta propuesta ni es requisito para operar; se documenta para que la comparación sea completa. En el escenario de servidor propio, la administración de la infraestructura pasa a ser responsabilidad de la empresa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="valor" data-screen-label="10 Valor y forma de pago" style="position:relative;padding:clamp(80px,12vh,140px) 0;border-top:1px solid rgba(255,255,255,.07);background:linear-gradient(165deg,#0A2540,#071A2E 55%,#06263F);overflow:hidden">
+    <canvas data-canvas="valor" style="position:absolute;inset:0;width:100%;height:100%;display:block;opacity:.6"></canvas>
+    <div style="position:absolute;top:-10%;left:50%;width:60vw;height:40vw;max-width:820px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.22),transparent 65%);filter:blur(30px);transform:translateX(-50%);animation:ndGlow 10s ease-in-out infinite;pointer-events:none"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 30px">
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;align-items:center;gap:13px;margin-bottom:26px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">10</span>
+        <span style="width:30px;height:1px;background:rgba(255,255,255,.2)"></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Valor y forma de pago</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,64px);align-items:flex-start">
+        <div style="flex:1 1 380px;min-width:0">
+          <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#1EC8C8;margin-bottom:14px">Inversión total del Módulo 1</div>
+          <div data-reveal="" style="display:flex;align-items:flex-end;gap:10px;flex-wrap:nowrap">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:500;color:#1EC8C8;line-height:1;position:relative;top:-.04em">$</span>
+            <span data-count="" data-to="15000000" data-format="dot" style="font-family:'IBM Plex Mono',monospace;font-size:clamp(2.6rem,7vw,5.4rem);font-weight:600;letter-spacing:-.03em;line-height:1;color:#fff">15.000.000</span>
+          </div>
+          <div data-reveal="" style="font-size:14px;color:#93A7BC;margin-top:12px">Pesos colombianos · IVA no incluido · pago único, sin licenciamiento recurrente</div>
+          <p data-reveal="" style="font-size:16px;line-height:1.62;color:#E6EEF6;margin:28px 0 0;max-width:56ch;text-wrap:pretty">Pago en tres (3) cuotas mensuales iguales de $ 5.000.000, sin recargo por financiación. La primera da inicio al plazo, la segunda acompaña el avance del desarrollo y la tercera se causa a la entrega en operación.</p>
+          <div data-reveal="" style="margin-top:28px;border-left:2px solid #00C896;background:rgba(0,200,150,.07);padding:20px 22px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#00C896;margin-bottom:9px">Compromiso sobre el plazo</div>
+            <p style="font-size:15px;line-height:1.6;color:#E6EEF6;margin:0;max-width:56ch;text-wrap:pretty">Si al término del plazo de ejecución el sistema no está en condiciones de recibir e inventariar el embarque que llega con la maquinaria, la cuota de entrega no se factura hasta que dicha condición se cumpla, sin costo adicional. El riesgo del plazo lo asume Neodysk.</p>
+          </div>
+        </div>
+        <div style="flex:1 1 380px;min-width:0">
+          <div data-reveal="" style="border:1px solid rgba(255,255,255,.12);background:rgba(7,26,46,.6);backdrop-filter:blur(6px)">
+            <div style="display:grid;grid-template-columns:.7fr 2fr 1fr">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.1)">Cuota</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.1)">Causación</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#93A7BC;padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.1);text-align:right">Valor</div>
+              <sc-for list="{{ cuotas }}" as="q" hint-placeholder-count="3">
+                <div data-row="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1EC8C8;padding:16px;border-bottom:1px solid rgba(255,255,255,.06)">{{ q.n }}</div>
+                <div data-row="" style="font-size:14px;line-height:1.5;color:#E6EEF6;padding:16px;border-bottom:1px solid rgba(255,255,255,.06)">{{ q.causacion }}</div>
+                <div data-row="" style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#fff;padding:16px;border-bottom:1px solid rgba(255,255,255,.06);text-align:right;white-space:nowrap">{{ q.valor }}</div>
+              </sc-for>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A7BC;padding:16px;background:rgba(30,200,200,.07)">Σ</div>
+              <div style="font-family:Sora,sans-serif;font-size:14px;font-weight:500;color:#fff;padding:16px;background:rgba(30,200,200,.07)">Valor total del Módulo 1</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#1EC8C8;padding:16px;text-align:right;background:rgba(30,200,200,.07);white-space:nowrap">$ 15.000.000</div>
+            </div>
+          </div>
+          <div data-reveal="" style="margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+            <div style="background:rgba(7,26,46,.6);padding:18px 16px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff">$ 890.000<span style="font-size:11px;color:#93A7BC"> /mes</span></div>
+              <div style="font-size:12.5px;line-height:1.45;color:#93A7BC;margin-top:6px">Soporte y evolución posterior, opcional</div>
+            </div>
+            <div style="background:rgba(7,26,46,.6);padding:18px 16px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff">USD 50–65<span style="font-size:11px;color:#93A7BC"> /mes</span></div>
+              <div style="font-size:12.5px;line-height:1.45;color:#93A7BC;margin-top:6px">Nube a nombre de la empresa, sin sobrecosto</div>
+            </div>
+            <div style="background:rgba(7,26,46,.6);padding:18px 16px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff">3 meses</div>
+              <div style="font-size:12.5px;line-height:1.45;color:#93A7BC;margin-top:6px">Garantía y soporte incluidos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="acuerdo" data-screen-label="11 Garantía, obligaciones y propiedad" style="padding:clamp(70px,10vh,120px) 0;border-top:1px solid rgba(255,255,255,.07);background:#0A2540">
+    <div style="max-width:1280px;margin:0 auto;padding:0 30px;display:flex;flex-wrap:wrap;gap:clamp(30px,5vw,70px)">
+      <div style="flex:0 0 160px;min-width:0">
+        <div data-reveal="" style="position:sticky;top:104px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:40px;font-weight:300;line-height:1;color:#2563EB">11</div>
+          <div style="width:100%;height:1px;background:rgba(255,255,255,.14);margin:13px 0"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93A7BC">Condiciones</div>
+        </div>
+      </div>
+      <div style="flex:1 1 470px;min-width:0">
+        <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.6rem,2.9vw,2.4rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 36px;color:#fff;max-width:26ch">Garantía, obligaciones y propiedad</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09)">
+          <sc-for list="{{ condiciones }}" as="c" hint-placeholder-count="3">
+            <div data-reveal="" data-card="" style="background:#071A2E;padding:26px 24px;transition:background .4s ease">
+              <div style="font-family:Sora,sans-serif;font-size:17px;font-weight:500;color:#fff;margin-bottom:16px">{{ c.titulo }}</div>
+              <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px">
+                <sc-for list="{{ c.items }}" as="it" hint-placeholder-count="5">
+                  <li style="display:flex;gap:10px;font-size:14px;line-height:1.5;color:#E6EEF6">
+                    <span style="flex:0 0 auto;color:#00C896;font-family:'IBM Plex Mono',monospace;font-size:12px;padding-top:2px">—</span>
+                    <span style="min-width:0">{{ it }}</span>
+                  </li>
+                </sc-for>
+              </ul>
+            </div>
+          </sc-for>
+        </div>
+
+        <h3 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:20px;letter-spacing:-.015em;margin:52px 0 16px;color:#fff">Exclusiones expresas</h3>
+        <p data-reveal="" style="font-size:15.5px;line-height:1.65;color:#93A7BC;margin:0;max-width:74ch;text-wrap:pretty">No forman parte del presente objeto: facturación electrónica y documentos tributarios; contabilidad, cartera, nómina y tesorería; cotización, seguimiento comercial, producción y despacho (Módulos 2, 3 y 4); cálculo de optimización de corte, que resuelve el software propio de la maquinaria; adquisición de impresora y consumibles; servicios de nube mensuales; y la ejecución material del conteo físico, que corresponde al personal de la empresa con acompañamiento del proveedor.</p>
+
+        <h3 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:20px;letter-spacing:-.015em;margin:52px 0 16px;color:#fff">Documentos del acuerdo</h3>
+        <p data-reveal="" style="font-size:15.5px;line-height:1.6;color:#93A7BC;margin:0 0 24px;max-width:66ch">El acuerdo se formaliza con dos documentos anexos de suscripción obligatoria.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+          <div data-reveal="" style="border:1px solid rgba(255,255,255,.12);border-top:2px solid #2563EB;background:#071A2E;padding:24px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#2563EB;margin-bottom:12px">ANEXO 1</div>
+            <div style="font-family:Sora,sans-serif;font-size:17px;font-weight:500;color:#fff;margin-bottom:10px">Contrato de desarrollo y cesión de derechos</div>
+            <p style="font-size:14px;line-height:1.55;color:#93A7BC;margin:0">Define objeto, alcance, entregables, cronograma, pago, garantía, control de cambios y cesión de derechos patrimoniales del software a la empresa.</p>
+          </div>
+          <div data-reveal="" style="border:1px solid rgba(255,255,255,.12);border-top:2px solid #2563EB;background:#071A2E;padding:24px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#2563EB;margin-bottom:12px">ANEXO 2</div>
+            <div style="font-family:Sora,sans-serif;font-size:17px;font-weight:500;color:#fff;margin-bottom:10px">Acuerdo de tratamiento de datos personales</div>
+            <p style="font-size:14px;line-height:1.55;color:#93A7BC;margin:0">Regula el manejo de datos personales conforme a la Ley 1581 de 2012 (habeas data): responsable, encargado, finalidades y medidas de seguridad.</p>
+          </div>
+        </div>
+        <p data-reveal="" style="font-size:13.5px;line-height:1.6;color:#93A7BC;margin:18px 0 0;max-width:78ch;text-wrap:pretty">Neodysk aporta ambos documentos redactados y sin costo para la empresa: su elaboración está incluida en el valor de la propuesta. La revisión jurídica que cada parte quiera hacer sobre ellos corre por cuenta de quien la solicite y no está incluida en los $ 15.000.000; si la empresa opta por revisión de un abogado externo, ese honorario es un costo propio que debe presupuestar aparte. Neodysk no cobra por ajustar la redacción de los anexos a las observaciones que resulten de esa revisión.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="position:relative;padding:clamp(70px,10vh,120px) 0 44px;border-top:1px solid rgba(255,255,255,.07);background:#071A2E;overflow:hidden">
+    <div style="position:absolute;bottom:-30%;left:50%;width:70vw;height:50vw;max-width:900px;border-radius:50%;background:radial-gradient(circle,rgba(30,200,200,.14),transparent 66%);filter:blur(30px);transform:translateX(-50%);animation:ndGlow 12s ease-in-out infinite;pointer-events:none"></div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:0 30px">
+      <div data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#1EC8C8;margin-bottom:20px">Validación técnica</div>
+      <h2 data-reveal="" style="font-family:Sora,sans-serif;font-weight:500;font-size:clamp(1.7rem,3.4vw,2.8rem);line-height:1.12;letter-spacing:-.03em;margin:0;color:#fff;max-width:26ch;text-wrap:balance">Sesión técnica de validación</h2>
+      <p data-reveal="" style="font-size:17px;line-height:1.6;color:#93A7BC;margin:20px 0 26px;max-width:62ch;text-wrap:pretty">Antes de cualquier decisión, queda pendiente verificar si el modelo planteado corresponde a la operación real. Es una revisión técnica, no una reunión de cierre: si el análisis muestra que el alcance no encaja, el ajuste o el descarte son resultados igualmente válidos.</p>
+      <div data-reveal="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.09);margin-bottom:34px;max-width:900px">
+        <div style="background:#0A2540;padding:20px 22px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#1EC8C8;margin-bottom:9px">Puntos por verificar</div>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Si el modelo de plancha, retazo y consumible refleja el manejo actual</span></li>
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Estructura real de las cinco sedes y sus zonas de almacenamiento</span></li>
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Naturaleza de las nuevas líneas de producto por ingresar</span></li>
+          </ul>
+        </div>
+        <div style="background:#0A2540;padding:20px 22px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#1EC8C8;margin-bottom:9px">Condiciones técnicas por revisar</div>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Equipos y cobertura de red disponibles en cada sede</span></li>
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Estado y formato de la información de inventario que existe hoy</span></li>
+            <li style="display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#E6EEF6"><span style="color:#93A7BC;font-family:'IBM Plex Mono',monospace;font-size:12px">—</span><span style="min-width:0">Viabilidad de la fecha del embarque frente al plazo de ejecución</span></li>
+          </ul>
+        </div>
+      </div>
+      <p data-reveal="" style="font-size:14px;line-height:1.6;color:#93A7BC;margin:0 0 30px;max-width:66ch;text-wrap:pretty">La sesión no requiere preparación documental ni decisión en el momento. Cualquier duda técnica sobre lo presentado puede tratarse antes por correo.</p>
+      <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px">
+        <a href="mailto:jrestrepo@neodysk.com?subject=Sesi%C3%B3n%20t%C3%A9cnica%20de%20validaci%C3%B3n%20%E2%80%94%20M%C3%B3dulo%201%20Bodega%20y%20Almac%C3%A9n" style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:#071A2E;background:#1EC8C8;padding:14px 22px;border-radius:3px;transition:transform .3s ease,box-shadow .3s ease" style-hover="transform:translateY(-2px);box-shadow:0 12px 30px rgba(30,200,200,.3)">Coordinar la sesión técnica</a>
+        <a href="#top" style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:500;color:#E6EEF6;border:1px solid rgba(255,255,255,.18);padding:14px 22px;border-radius:3px;transition:border-color .3s ease,background .3s ease" style-hover="border-color:#1EC8C8;background:rgba(30,200,200,.08)">Volver al inicio</a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:flex-end;justify-content:space-between;border-top:1px solid rgba(255,255,255,.09);padding-top:30px">
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <img src="assets/neodysk-icon.png" alt="Neodysk" style="width:38px;height:38px;object-fit:contain;display:block">
+          <div>
+            <div style="font-family:Sora,sans-serif;font-size:15px;font-weight:500;color:#fff">Neodysk · Julián Andrés Restrepo Rivera</div>
+            <div style="font-size:13px;color:#93A7BC;margin-top:4px">Ingeniero de Sistemas · Santiago de Cali, Valle del Cauca</div>
+            <a href="mailto:jrestrepo@neodysk.com" style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1EC8C8;margin-top:6px">jrestrepo@neodysk.com</a>
+          </div>
+        </div>
+        <div style="flex:0 1 auto;font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.7;color:#93A7BC;text-align:right">
+          <div>Validez: 15 días calendario</div>
+          <div>Valores sin IVA · precios de terceros sujetos a verificación</div>
+          <div>Agosto de 2026</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;intensidadMotion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Sobria&quot;,&quot;Notable&quot;,&quot;Cinematográfica&quot;],&quot;default&quot;:&quot;Cinematográfica&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Animación&quot;},&quot;fondoAnimado&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Animación&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.refsMap = {};
+    this.rafs = [];
+    this.cleanups = [];
+  }
+
+  get reduced() {
+    return typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  get motion() {
+    const m = this.props.intensidadMotion || 'Cinematográfica';
+    if (this.reduced) return 0;
+    return m === 'Sobria' ? 0.45 : m === 'Notable' ? 0.75 : 1;
+  }
+
+  componentDidMount() {
+    this.root = this.el || document.body;
+    this.buildMarquee();
+    this.setupGantt();
+    this.setupReveal();
+    this.setupProgress();
+    this.setupSpy();
+    this.setupHover();
+    if (this.props.fondoAnimado !== false) this.setupCanvas();
+    this.fallback = setTimeout(() => this.revealVisible(), 2600);
+  }
+
+  componentWillUnmount() {
+    this.rafs.forEach(id => cancelAnimationFrame(id));
+    this.cleanups.forEach(fn => { try { fn(); } catch (e) {} });
+    clearTimeout(this.fallback);
+    if (this.io) this.io.disconnect();
+  }
+
+  q(sel) { return Array.from((this.root || document).querySelectorAll(sel)); }
+
+  buildMarquee() {
+    const track = (this.root || document).querySelector('[data-marquee-track]');
+    if (!track || track.childElementCount) return;
+    const names = ['CATÁLOGO','IDENTIFICACIÓN QR','MOVIMIENTOS','TRASLADOS EN DOS ACTOS','EXISTENCIAS EN TIEMPO REAL','RETAZOS VENDIBLES','CONTEO CÍCLICO','RESERVAS POR PROYECTO','LEDGER INMUTABLE','ROLES Y PERMISOS','IMPORTACIÓN EXCEL','REPORTES Y EXPORTACIÓN','CAPACITACIÓN EN PISO','RESPALDO DIARIO'];
+    const make = () => {
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'display:flex;align-items:center;flex:0 0 auto';
+      names.forEach(n => {
+        const s = document.createElement('span');
+        s.textContent = n;
+        s.style.cssText = "font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#93A7BC;padding:11px 20px;white-space:nowrap";
+        const d = document.createElement('span');
+        d.textContent = '·';
+        d.style.cssText = "font-family:'IBM Plex Mono',monospace;font-size:11px;color:#1EC8C8";
+        wrap.appendChild(s); wrap.appendChild(d);
+      });
+      return wrap;
+    };
+    track.appendChild(make());
+    track.appendChild(make());
+    track.parentElement.style.width = 'max-content';
+  }
+
+  inView(el) {
+    const vh = window.innerHeight || 800;
+    const r = el.getBoundingClientRect();
+    return r.top < vh * 1.05 && r.bottom > -60;
+  }
+
+  revealVisible() {
+    const all = !('IntersectionObserver' in window);
+    const ok = el => all || this.inView(el);
+    this.q('[data-reveal]').forEach(el => { if (ok(el)) this.show(el); });
+    this.q('[data-bar]').forEach(el => { if (ok(el)) el.style.width = (el.getAttribute('data-w') || '0') + '%'; });
+    this.q('[data-check]').forEach(el => { if (ok(el)) { el.style.opacity = '1'; el.style.background = 'rgba(0,200,150,.14)'; } });
+    this.q('[data-count]').forEach(el => { if (ok(el) && !el.dataset.counted) { el.dataset.counted = '1'; this.countUp(el); } });
+    this.q('[data-gbar]').forEach(el => { if (ok(el)) el.style.width = (el.getAttribute('data-gw') || '0') + '%'; });
+    this.q('[data-grow]').forEach(el => { if (ok(el)) el.style[el.getAttribute('data-prop') || 'width'] = (el.getAttribute('data-gw') || '0') + '%'; });
+    this.q('[data-pop]').forEach(el => { if (ok(el)) { el.style.opacity = '1'; el.style.transform = 'none'; } });
+    this.q('[data-gmark]').forEach(el => { if (!ok(el)) return; const d = el.querySelector('[data-diamond]'); if (d) { d.style.opacity = '1'; d.style.transform = el.getAttribute('data-dtr') || 'translateX(-50%) rotate(45deg)'; } });
+    const tl = (this.root || document).querySelector('[data-timeline]');
+    if (tl && ok(tl)) tl.style.transform = 'scaleY(1)';
+  }
+
+  show(el, delay) {
+    if (el.dataset.shown) return;
+    el.dataset.shown = '1';
+    const d = delay || 0;
+    setTimeout(() => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.filter = 'none';
+    }, d);
+  }
+
+  setupReveal() {
+    const m = this.motion;
+    const items = this.q('[data-reveal]');
+    items.forEach(el => {
+      if (m === 0) { el.style.opacity = '1'; return; }
+      el.style.opacity = '0';
+      el.style.transform = 'translate3d(0,' + Math.round(26 * m) + 'px,0)';
+      el.style.filter = 'blur(' + (3 * m).toFixed(1) + 'px)';
+      el.style.transition = 'opacity .85s cubic-bezier(.16,1,.3,1), transform .95s cubic-bezier(.16,1,.3,1), filter .8s ease';
+    });
+
+    const seen = new WeakMap();
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        if (el.hasAttribute('data-reveal')) {
+          const sib = Array.from(el.parentElement ? el.parentElement.children : []).filter(c => c.hasAttribute && c.hasAttribute('data-reveal'));
+          const idx = Math.max(0, sib.indexOf(el));
+          this.show(el, Math.min(idx, 6) * 70 * m);
+        }
+        if (el.hasAttribute('data-bars')) {
+          el.querySelectorAll('[data-bar]').forEach((b, i) => {
+            setTimeout(() => { b.style.width = (b.getAttribute('data-w') || '0') + '%'; }, 90 + i * 55 * m);
+          });
+        }
+        if (el.hasAttribute('data-check')) {
+          setTimeout(() => { el.style.opacity = '1'; el.style.background = 'rgba(0,200,150,.14)'; }, 120);
+        }
+        if (el.hasAttribute('data-count') && !seen.get(el)) { seen.set(el, 1); this.countUp(el); }
+        if (el.hasAttribute('data-timeline')) el.style.transform = 'scaleY(1)';
+        if (el.hasAttribute('data-gantt')) el.querySelectorAll('[data-gbar]').forEach((b, i) => setTimeout(() => { b.style.width = (b.getAttribute('data-gw') || '0') + '%'; }, 80 + i * 90 * (m || 1)));
+        if (el.hasAttribute('data-anim')) {
+          el.querySelectorAll('[data-grow]').forEach((b, i) => { const p = b.getAttribute('data-prop') || 'width'; setTimeout(() => { b.style[p] = (b.getAttribute('data-gw') || '0') + '%'; }, 70 + i * 80 * (m || 1)); });
+          el.querySelectorAll('[data-pop]').forEach((b, i) => setTimeout(() => { b.style.opacity = '1'; b.style.transform = 'none'; }, 70 + i * 42 * (m || 1)));
+          el.querySelectorAll('[data-gmark]').forEach((b, i) => setTimeout(() => { const dot = b.querySelector('[data-diamond]'); if (dot) { dot.style.opacity = '1'; dot.style.transform = b.getAttribute('data-dtr') || 'translateX(-50%) rotate(45deg)'; } }, 120 + i * 90 * (m || 1)));
+        }
+        this.io.unobserve(el);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+
+    ['[data-reveal]', '[data-bars]', '[data-check]', '[data-count]', '[data-timeline]', '[data-anim]'].forEach(sel => this.q(sel).forEach(el => this.io.observe(el)));
+  }
+
+  countUp(el) {
+    const to = parseFloat(el.getAttribute('data-to') || '0');
+    if (!to) return;
+    const dot = el.getAttribute('data-format') === 'dot';
+    const dur = this.motion === 0 ? 0 : 1500;
+    if (!dur) { el.textContent = dot ? to.toLocaleString('es-CO') : String(to); return; }
+    const t0 = performance.now();
+    const step = now => {
+      const p = Math.min(1, (now - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 3);
+      const v = Math.round(to * e);
+      el.textContent = dot ? v.toLocaleString('es-CO') : String(v);
+      if (p < 1) this.rafs.push(requestAnimationFrame(step));
+    };
+    this.rafs.push(requestAnimationFrame(step));
+  }
+
+  setupProgress() {
+    const bar = (this.root || document).querySelector('[data-progress]');
+    const top = (this.root || document).querySelector('[data-topbar]');
+    const onScroll = () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const p = h > 0 ? Math.min(1, window.scrollY / h) : 0;
+      if (bar) bar.style.width = (p * 100).toFixed(2) + '%';
+      if (top) {
+        const on = window.scrollY > 60;
+        top.style.background = on ? 'rgba(7,26,46,.86)' : 'rgba(7,26,46,0)';
+        top.style.backdropFilter = on ? 'blur(14px)' : 'none';
+        top.style.borderBottomColor = on ? 'rgba(255,255,255,.09)' : 'rgba(255,255,255,0)';
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    this.cleanups.push(() => window.removeEventListener('scroll', onScroll));
+    onScroll();
+  }
+
+  setupSpy() {
+    const links = this.q('[data-nav]');
+    if (!links.length) return;
+    const setActive = id => links.forEach(a => {
+      const on = a.getAttribute('data-nav') === id;
+      a.style.color = on ? '#071A2E' : '#93A7BC';
+      a.style.background = on ? '#1EC8C8' : 'transparent';
+    });
+    const ids = links.map(a => a.getAttribute('data-nav'));
+    const spy = new IntersectionObserver(entries => {
+      const vis = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (vis) setActive(vis.target.id);
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: [0, 0.2, 0.6] });
+    ids.forEach(id => { const s = document.getElementById(id); if (s) spy.observe(s); });
+    this.cleanups.push(() => spy.disconnect());
+  }
+
+  setupHover() {
+    this.q('[data-row]').forEach(el => {
+      const on = () => { el.style.background = 'rgba(30,200,200,.06)'; };
+      const off = () => { el.style.background = 'transparent'; };
+      el.addEventListener('mouseenter', on); el.addEventListener('mouseleave', off);
+      this.cleanups.push(() => { el.removeEventListener('mouseenter', on); el.removeEventListener('mouseleave', off); });
+    });
+    this.q('[data-card]').forEach(el => {
+      const on = () => { el.style.background = '#0B2A48'; };
+      const off = () => { el.style.background = '#071A2E'; };
+      el.addEventListener('mouseenter', on); el.addEventListener('mouseleave', off);
+      this.cleanups.push(() => { el.removeEventListener('mouseenter', on); el.removeEventListener('mouseleave', off); });
+    });
+  }
+
+  setupGantt() {
+    this.q('[data-gbar]').forEach(b => { b.style.left = (b.getAttribute('data-gl') || '0') + '%'; b.style.width = '0%'; });
+    this.q('[data-gmark]').forEach(k => { k.style.left = (k.getAttribute('data-gl') || '0') + '%'; });
+  }
+
+  setupCanvas() {
+    if (this.motion === 0) return;
+    this.q('[data-canvas]').forEach(cv => this.network(cv, cv.getAttribute('data-canvas')));
+  }
+
+  network(canvas, kind) {
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    const dense = kind === 'hero' ? 1 : 0.62;
+    let w = 0, h = 0, dpr = 1, nodes = [], running = true;
+    const palette = ['#1EC8C8', '#2563EB', '#00C896'];
+
+    const resize = () => {
+      const r = canvas.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = Math.max(1, r.width); h = Math.max(1, r.height);
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.round(Math.min(78, Math.max(24, (w * h) / 17000)) * dense * this.motion);
+      nodes = new Array(count).fill(0).map(() => ({
+        x: Math.random() * w, y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.24 * this.motion,
+        vy: (Math.random() - 0.5) * 0.24 * this.motion,
+        r: 0.9 + Math.random() * 1.5,
+        c: palette[Math.floor(Math.random() * palette.length)]
+      }));
+    };
+
+    const ro = new ResizeObserver(resize);
+    ro.observe(canvas);
+    resize();
+
+    const mouse = { x: -9999, y: -9999 };
+    const onMove = e => {
+      const r = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
+    };
+    const onLeave = () => { mouse.x = -9999; mouse.y = -9999; };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    canvas.addEventListener('mouseleave', onLeave);
+
+    const io = new IntersectionObserver(es => { running = es.some(e => e.isIntersecting); });
+    io.observe(canvas);
+
+    const tick = () => {
+      if (!running) { this.rafs.push(requestAnimationFrame(tick)); return; }
+      ctx.clearRect(0, 0, w, h);
+      const link = Math.min(168, Math.max(96, w / 9));
+      for (let i = 0; i < nodes.length; i++) {
+        const n = nodes[i];
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < -20) n.x = w + 20; if (n.x > w + 20) n.x = -20;
+        if (n.y < -20) n.y = h + 20; if (n.y > h + 20) n.y = -20;
+        const dmx = n.x - mouse.x, dmy = n.y - mouse.y;
+        const dm = Math.hypot(dmx, dmy);
+        if (dm < 130 && dm > 0.01) { n.x += (dmx / dm) * 0.5; n.y += (dmy / dm) * 0.5; }
+        for (let j = i + 1; j < nodes.length; j++) {
+          const m = nodes[j];
+          const dx = n.x - m.x, dy = n.y - m.y;
+          const d = Math.hypot(dx, dy);
+          if (d < link) {
+            ctx.globalAlpha = (1 - d / link) * 0.26;
+            ctx.strokeStyle = n.c;
+            ctx.lineWidth = 0.7;
+            ctx.beginPath(); ctx.moveTo(n.x, n.y); ctx.lineTo(m.x, m.y); ctx.stroke();
+          }
+        }
+        ctx.globalAlpha = dm < 130 ? 0.95 : 0.6;
+        ctx.fillStyle = n.c;
+        ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+      this.rafs.push(requestAnimationFrame(tick));
+    };
+    this.rafs.push(requestAnimationFrame(tick));
+
+    this.cleanups.push(() => {
+      ro.disconnect(); io.disconnect();
+      window.removeEventListener('mousemove', onMove);
+      canvas.removeEventListener('mouseleave', onLeave);
+    });
+  }
+
+  renderVals() {
+    const T = '#1EC8C8', B = '#2563EB', G = '#00C896', M = '#93A7BC';
+    const MAX = 832;
+    const pct = v => ((v / MAX) * 100).toFixed(2);
+    const NEO = 15;
+    const mlt = n => { const r = n / NEO; return r < 10 ? (+r.toFixed(1)).toString() : Math.round(r).toString(); };
+    const rows = [
+      { nombre: 'Módulo 1 · Bodega y almacén', lo: 15, hi: 15, base: true, color: G },
+      { nombre: 'Odoo · implementación', lo: 32, hi: 140, color: M },
+      { nombre: 'Siesa · implementación', lo: 12, hi: 120, color: M },
+      { nombre: 'Cúbico WMS · año 1', lo: 56, hi: 146, color: T },
+      { nombre: 'SAP Business One', lo: 80, hi: 240, color: M },
+      { nombre: 'Visual Control WMS · año 1', lo: 102, hi: 248, color: T },
+      { nombre: 'Mecalux Easy WMS · año 1', lo: 244, hi: 704, color: B },
+      { nombre: 'Infor WMS · Cerca · año 1', lo: 352, hi: 832, color: B }
+    ];
+    const barras = rows.map(r => ({
+      nombre: r.nombre, color: r.color,
+      piso: pct(r.lo), techo: pct(r.hi),
+      mult: r.base ? '1× · base' : '≈ ' + mlt(r.lo) + '–' + mlt(r.hi) + '×',
+      sub: r.base ? '$15M · pago único' : '$' + r.lo + '–' + r.hi + 'M'
+    }));
+
+    const familias = [
+      {
+        categoria: 'A', nombre: 'Software contable-administrativo',
+        descripcion: 'Contabilidad y facturación DIAN con inventario. Inventario fungible por cantidad, sin unidad física individual. Precios de plan base verificados.',
+        c0: 'Sistema', c1: 'Perfil', c2: 'Inventario', c3: 'Plan base/mes',
+        filas: [
+          { a: 'Siigo Nube', b: 'Pyme y mediana', c: 'Multibodega, centros de costo', d: '$146.000+' },
+          { a: 'Alegra', b: 'Pyme, nube nativa', c: 'Básico por cantidad', d: '$70.000+' },
+          { a: 'World Office', b: 'Retail y distribución', c: 'Robusto, producción', d: '$38.000+' },
+          { a: 'Loggro', b: 'Comercio, ERP ligero', c: 'Multibodega, traslados', d: '$100.000+' },
+          { a: 'Helisa', b: 'Mediana, contable', c: 'Integrado', d: '$250.000+' },
+          { a: 'ContaPyme', b: 'Pequeña y mediana', c: 'Módulos completos', d: '$90.000+' }
+        ]
+      },
+      {
+        categoria: 'B', nombre: 'WMS — centros de distribución',
+        descripcion: 'Logística de almacén de alto volumen. Un WMS se conecta a un ERP, no lo reemplaza. Precios en orden de magnitud, sujetos a cotización.',
+        c0: 'Sistema', c1: 'Perfil', c2: 'Mensual · 10 u', c3: 'Año 1',
+        filas: [
+          { a: 'Cúbico WMS · Cibergenius', b: 'Pyme y mediana', c: '$3M–$8M', d: '$56M–$146M' },
+          { a: 'Visual Control WMS', b: 'Manufactura', c: '$6M–$14M', d: '$102M–$248M' },
+          { a: 'Mecalux Easy WMS', b: 'Distribución compleja', c: '$12M–$32M', d: '$244M–$704M' },
+          { a: 'Infor WMS · Cerca', b: 'Enterprise', c: '$16M–$36M', d: '$352M–$832M' }
+        ]
+      },
+      {
+        categoria: 'C', nombre: 'ERP configurables',
+        descripcion: 'Gestión integral. Lo específico del negocio exige desarrollo a medida sobre el ERP, más el ciclo de actualizaciones.',
+        c0: 'Sistema', c1: 'Perfil', c2: 'Licencia · u/mes', c3: 'Implementación',
+        filas: [
+          { a: 'Siesa', b: 'ERP colombiano, Cali', c: 'consultar', d: '$12M–$120M' },
+          { a: 'SAP Business One', b: 'Mediana y grande', c: '~USD 100', d: '$80M–$240M' },
+          { a: 'Odoo', b: 'Configurable, open source', c: '~USD 31', d: '$32M–$140M' }
+        ]
+      }
+    ];
+
+    const grupos = [
+      { clave: 'A', titulo: 'Catálogo', resumen: 'Todo lo que se compra y se vende, con la empresa creando sus propias categorías.', items: ['Editor de tipos de producto con atributos definibles, administrable sin intervención del proveedor', 'Clasificación por marca, color, tipo, dimensión y referencia, con filtros combinables', 'Vocabularios controlados de colores y marcas, sin duplicados por variación de escritura', 'Tres naturalezas: plancha como objeto individual, producto discreto y consumible', 'Lote de importación con proveedor, país de origen y fechas', 'Existencias mínimas y máximas por referencia, con alerta'] },
+      { clave: 'B', titulo: 'Identificación y escaneo', resumen: 'Etiqueta que resiste las condiciones reales de una bodega de materiales.', items: ['Código QR de alta corrección de error, tolerante a polvo, humedad y abrasión', 'Código legible impreso bajo el símbolo; digitación manual como respaldo', 'Impresión por lote y reimpresión de etiqueta deteriorada sin alterar el registro', 'Código propio por zona y estante de bodega', 'Lectura con la cámara del teléfono, sin equipo dedicado'] },
+      { clave: 'C', titulo: 'Movimientos', resumen: 'Nada entra ni sale sin responsable, fecha y motivo.', items: ['Entrada con proveedor, remisión, lote y ubicación destino', 'Salida con motivo, destino, obra y responsable que retira', 'Traslado entre sedes en dos actos: autoriza quien despacha, confirma quien recibe', 'Material en tránsito visible, con alerta por demora', 'Devolución de obra con evaluación de estado', 'Ajuste con motivo obligatorio y autorización de perfil superior', 'Avería y merma con causa, responsable y evidencia fotográfica'] },
+      { clave: 'D', titulo: 'Existencias', resumen: 'La verdad del inventario, en tiempo real y en cualquier dispositivo.', items: ['Saldo físico y saldo disponible presentados por separado', 'Reserva de material contra proyecto, que impide el compromiso doble', 'Retazos incorporados como inventario vendible, con dimensiones y fotografía', 'Conteo cíclico por escaneo continuo, con reporte de discrepancias', 'Ficha de plancha con fotografía y medidas reales verificadas'] },
+      { clave: 'E', titulo: 'Carga inicial', resumen: 'El arranque resuelto, incluso si el proveedor no envía archivo.', items: ['Importación masiva desde Excel, con plantilla por tipo de producto', 'Previsualización obligatoria antes de confirmar y reversión de lote completo', 'Detección de archivo cargado dos veces', 'Alta rápida desde teléfono como alternativa', 'Acompañamiento presencial durante el conteo físico de arranque'] },
+      { clave: 'F', titulo: 'Reportes y entrega', resumen: 'Información para decidir, y el equipo capacitado para usarla.', items: ['Existencias por sede, línea, categoría y ubicación', 'Movimientos por período, usuario y material; material bajo mínimo', 'Rotación por referencia; merma y avería por período y causa', 'Exportación a Excel para conciliación con el área contable', 'Capacitación en piso a tres personas y manual de uso en español'] }
+    ];
+
+    const criterios = [
+      { texto: 'Registro de entrada por escaneo, de apertura a confirmación', metrica: '< 10 s' },
+      { texto: 'Consulta de existencias desde cualquier sede y dispositivo', metrica: 'Tiempo real' },
+      { texto: 'Trazabilidad de entradas, salidas y traslados con responsable', metrica: '100%' },
+      { texto: 'Diferencia inventario físico vs. sistema tras conteo inicial', metrica: '< 3%' },
+      { texto: 'Recepción del embarque de maquinaria sin registros paralelos', metrica: 'Verificado' }
+    ];
+
+    const bloques = [
+      { titulo: 'Infraestructura', items: ['Aplicación web sobre plataforma administrada; la empresa no adquiere ni mantiene servidores propios', 'Base de datos PostgreSQL, motor estándar de la industria y portable entre proveedores', 'Dominio propio, certificado de seguridad y protección perimetral con control de acceso', 'Ambientes separados de pruebas y producción; ningún cambio manual sobre producción', 'Respaldo diario, con prueba de restauración documentada como requisito de entrega'] },
+      { titulo: 'Arquitectura de datos', items: ['Registro de movimientos inmutable: ningún movimiento se elimina ni se modifica; la corrección es un asiento de reversión, conforme al principio contable de partida no destructiva', 'Cualquier saldo, en cualquier fecha del histórico, es reconstruible en su totalidad', 'Control de concurrencia: dos salidas simultáneas del mismo material no descuadran el saldo', 'Aritmética exacta en valores y medidas, sin acumulación de errores de redondeo', 'Estructura preparada para incorporar sedes, bodegas y usuarios sin reconstruir el sistema'] },
+      { titulo: 'Usuarios y permisos', items: ['Perfiles de Gerencia, Administración, Vendedor, Producción, Domiciliario e Instalador, operativos desde este módulo', 'Cuentas nominales, sin usuarios compartidos: la trazabilidad depende de la identidad', 'Doble verificación de identidad para Gerencia y Administración', 'El costo es visible únicamente para Gerencia General, en todo el sistema', 'Administración asigna usuarios, salvo perfiles de Gerencia; baja inmediata de acceso al retiro'] },
+      { titulo: 'Seguridad aplicada', items: ['Permisos verificados en el servidor y en la propia base de datos, no en la interfaz', 'Bitácora inalterable: usuario, acción, valores anterior y nuevo, fecha, hora y dispositivo', 'Cifrado en tránsito, expiración de sesión y reautenticación para operaciones sensibles', 'Exportación íntegra de la información disponible para Gerencia en cualquier momento'] }
+    ];
+
+    const hitos = [
+      { etiqueta: 'Fase 1 · Semanas 1–2 · 15–28 sep', detalle: 'Infraestructura contratada y configurada: dominio, ambientes separados de pruebas y producción, base de datos PostgreSQL y respaldo diario. Estructura de usuarios y permisos de toda la operación, con ingreso por doble verificación de identidad para Gerencia y Administración.' },
+      { etiqueta: 'Fase 2 · Semanas 3–4 · 29 sep – 12 oct', detalle: 'Catálogo completo: editor de tipos de producto con atributos definibles, vocabularios controlados de colores y marcas, y las tres naturalezas (plancha individual, producto discreto y consumible). Ubicaciones jerárquicas por zona y estante, y generación e impresión de etiquetas QR.' },
+      { etiqueta: 'Fase 3 · Semanas 5–6 · 13–26 oct', detalle: 'Movimientos —entradas, salidas, traslados en dos actos, devoluciones, ajustes, avería y merma—, importación masiva desde Excel con previsualización y reversión, y consulta con escaneo desde el teléfono. Al cierre, el sistema queda apto para recibir e inventariar el embarque que llega con la maquinaria.' },
+      { etiqueta: 'Fase 4 · Semanas 7–8 · 27 oct – 9 nov', detalle: 'Existencias y saldo disponible, reservas contra proyecto, retazos vendibles, conteo cíclico y reportes con exportación a Excel. Capacitación en piso a tres personas, acompañamiento del conteo físico inicial, prueba de restauración documentada y puesta en operación.' }
+    ];
+
+    const riesgos = [
+      { riesgo: 'Catálogo inicial incompleto o inconsistente', cat: 'Datos', prob: 'Alta', imp: 'Alto', color: '#2563EB', mitigacion: 'Importación por lotes con validación de esquema, previsualización y reversión transaccional. Vocabularios controlados para evitar duplicados por escritura libre.' },
+      { riesgo: 'Diferencia entre existencia física y saldo del sistema', cat: 'Operación', prob: 'Alta', imp: 'Alto', color: '#2563EB', mitigacion: 'Conteo inicial con acompañamiento y ajuste registrado como movimiento auditable (usuario, fecha, motivo). Conteo cíclico posterior para mantener la desviación acotada.' },
+      { riesgo: 'Concurrencia: dos sedes moviendo la misma unidad', cat: 'Técnico', prob: 'Media', imp: 'Alto', color: '#1EC8C8', mitigacion: 'Saldo derivado del libro de movimientos, no editable directamente. Escrituras en transacción con bloqueo por fila y traslado en dos actos (envío / recepción) para no perder unidades en tránsito.' },
+      { riesgo: 'Equipos de cómputo insuficientes en sedes', cat: 'Infra', prob: 'Media', imp: 'Medio', color: '#1EC8C8', mitigacion: 'Mínimo tres equipos (PC o tablet) verificados antes del arranque. La interfaz opera en navegador sobre gama media, sin instalación local.' },
+      { riesgo: 'Baja adopción del personal de piso', cat: 'Adopción', prob: 'Media', imp: 'Alto', color: '#1EC8C8', mitigacion: 'Registro de movimiento por debajo de 10 segundos, escaneo QR desde teléfono, capacitación en piso y manual operativo. La medición de uso queda visible en reportes.' },
+      { riesgo: 'Pérdida o corrupción de datos', cat: 'Continuidad', prob: 'Baja', imp: 'Crítico', color: '#2563EB', mitigacion: 'Respaldo automático diario con retención de 7 días y recuperación a un punto en el tiempo. Prueba de restauración documentada antes de la entrega, no solo configurada.' },
+      { riesgo: 'Demora en llegada de impresora de etiquetas', cat: 'Terceros', prob: 'Media', imp: 'Bajo', color: '#1EC8C8', mitigacion: 'Identificación digital operativa desde el primer día; la impresión física se incorpora después sin rehacer datos.' },
+      { riesgo: 'Dependencia técnica de un solo proveedor', cat: 'Estratégico', prob: 'Media', imp: 'Alto', color: '#1EC8C8', mitigacion: 'Entrega de código fuente, documentación técnica y credenciales de todos los servicios. Stack estándar (PostgreSQL, Next.js) sin componentes propietarios, para que otro equipo pueda continuar.' },
+      { riesgo: 'Cobertura de red inestable en estantería alta', cat: 'Infra', prob: 'Baja', imp: 'Bajo', color: '#93A7BC', mitigacion: 'Diagnóstico de señal previo al arranque y entrada manual de respaldo para registrar sin conexión inmediata.' },
+      { riesgo: 'Indisponibilidad del proveedor de nube', cat: 'Terceros', prob: 'Baja', imp: 'Medio', color: '#93A7BC', mitigacion: 'Servicios con acuerdo de nivel publicado y datos exportables en formato estándar en cualquier momento; la base puede migrarse a infraestructura propia sin reescribir la aplicación.' }
+    ];
+
+    const cuotas = [
+      { n: '1 de 3', causacion: 'Al perfeccionamiento del acuerdo (15 de septiembre). Da inicio al plazo.', valor: '$ 5.000.000' },
+      { n: '2 de 3', causacion: 'A los 30 días, contra avance verificable de las fases 1 y 2.', valor: '$ 5.000.000' },
+      { n: '3 de 3', causacion: 'A la entrega en operación (~día 60), con capacitación realizada.', valor: '$ 5.000.000' }
+    ];
+
+    const condiciones = [
+      { titulo: 'Garantía y costos recurrentes', items: ['Tres (3) meses de garantía y soporte incluidos desde la puesta en operación', 'Corrección de defectos sin costo durante la garantía', 'Soporte y evolución posterior, opcional: $ 890.000 mensuales', 'Nube entre USD 50 y 65 mensuales, a nombre de la empresa, sin sobrecosto'] },
+      { titulo: 'Obligaciones de la empresa', items: ['Designar un interlocutor único con autoridad para decidir', 'Definir fecha, responsable y personal del conteo físico inicial', 'Disponer de tres personas para la capacitación en piso', 'Disponer de mínimo tres equipos de cómputo (PC o tablet) para la operación en sedes y la capacitación', 'Adquirir la impresora de etiquetas y sus consumibles', 'Suscribir a su nombre los servicios de nube y el dominio'] },
+      { titulo: 'Propiedad y continuidad', items: ['Cuentas de nube, dominio, base de datos, código fuente y documentación a nombre de D\u2019Mármol & Granito S.A.S. desde la primera entrega', 'Neodysk conserva acceso técnico delegado, registrado en bitácora auditable', 'Los datos son exportables en su integridad y en todo momento', 'Si la empresa integra a futuro contabilidad y compras en un ERP, la migración del inventario es posible por diseño'] }
+    ];
+
+    const gt = 148;
+    const fase = (nombre, rango, dur, s, e, bg, txt) => { const width = +((e - s) / gt * 100).toFixed(2); return { nombre, rango, dur, bg, txt, width, left: +(s / gt * 100).toFixed(2), inbar: width >= 20 ? rango : '' }; };
+    const stripe = 'repeating-linear-gradient(115deg, rgba(0,200,150,.26) 0 8px, transparent 8px 16px), rgba(0,200,150,.08)';
+    const fases = [
+      fase('Infraestructura y seguridad', '15–28 sep', 'Semanas 1–2', 0, 13, '#1EC8C8', '#071A2E'),
+      fase('Catálogo, ubicaciones e identificación', '29 sep – 12 oct', 'Semanas 3–4', 14, 27, '#2563EB', '#ffffff'),
+      fase('Movimientos e importación', '13–26 oct', 'Semanas 5–6', 28, 41, '#1EC8C8', '#071A2E'),
+      fase('Existencias, conteo y reportes', '27 oct – 9 nov', 'Semanas 7–8', 42, 55, '#2563EB', '#ffffff'),
+      fase('Puesta en operación y capacitación', '10–16 nov', 'Semana 9', 56, 62, '#00C896', '#071A2E'),
+      fase('Garantía y soporte incluido', '10 nov – 10 feb', '3 meses', 56, 148, stripe, '#00C896'),
+      fase('Gestión de proyecto (PM)', 'continua', '15 sep – 16 nov', 0, 62, '#8B5CF6', '#ffffff')
+    ];
+    const mk = (fecha, texto, d, color, idx, align) => ({
+      fecha, texto, color,
+      left: +(d / gt * 100).toFixed(2),
+      align: align === 'left' ? 'left' : align === 'right' ? 'right' : 'center',
+      shift: align === 'left' ? 'left:0' : align === 'right' ? 'right:0' : 'left:50%;transform:translateX(-50%)',
+      pos: idx % 2 === 0 ? 'bottom:46px' : 'top:46px'
+    });
+    const milestones = [
+      mk('15 sep', 'Inicio de ejecución · causación cuota 1', 0, '#1EC8C8', 0, 'left'),
+      mk('15 oct', 'Avance verificado fases 1–2 · causación cuota 2', 30, '#1EC8C8', 1, 'center'),
+      mk('26 oct', 'Sistema apto para recibir el embarque', 41, '#00C896', 2, 'center'),
+      mk('10 nov', 'Entrega en operación · causación cuota 3', 56, '#1EC8C8', 3, 'center'),
+      mk('10 feb', 'Cierre del periodo de garantía incluido', 148, '#93A7BC', 4, 'right')
+    ];
+    const meses = [
+      { n: 'Sep', g: 15, r: '15–30' },
+      { n: 'Oct', g: 31, r: '' },
+      { n: 'Nov', g: 30, r: '' },
+      { n: 'Dic', g: 31, r: '' },
+      { n: 'Ene', g: 31, r: '' },
+      { n: 'Feb', g: 10, r: '1–10' }
+    ];
+
+    const pesoTicks = [0, 200, 400, 600, 832].map(v => ({ v, txt: v === 0 ? '$0' : '$' + v + 'M', left: +(v / MAX * 100).toFixed(2) }));
+
+    const arquiLayers = [
+      { nombre: 'Presentación', stack: 'Next.js · React · Tailwind', desc: 'Pantallas y formularios. Solo pinta y dispara casos de uso; cero lógica de negocio.', color: T, cap: 'Capa 1', bg: '#071A2E', tag: '' },
+      { nombre: 'Aplicación', stack: 'Casos de uso · Guardas · Result<T>', desc: 'Orquesta reglas y verifica autorización antes de tocar datos. Devuelve resultados tipados.', color: B, cap: 'Capa 2', bg: '#071A2E', tag: '' },
+      { nombre: 'Dominio', stack: 'Entidades · Reglas · Puertos', desc: 'El negocio en TypeScript puro: plancha, retazo, movimiento y saldo. No conoce el exterior.', color: '#8B5CF6', cap: 'Núcleo', bg: 'rgba(139,92,246,.12)', tag: 'Sin dependencias externas' },
+      { nombre: 'Infraestructura', stack: 'PostgreSQL 15 · Supabase · Vercel · Cloudflare', desc: 'Implementa los puertos del dominio: persistencia, autenticación, almacenamiento y borde seguro.', color: G, cap: 'Capa base', bg: '#071A2E', tag: 'Implementa los puertos del dominio' }
+    ];
+    const stackChips = ['Next.js', 'React', 'TypeScript strict', 'Tailwind', 'PostgreSQL 15', 'Supabase Auth', 'Supabase Storage', 'Vercel', 'Cloudflare WAF', 'zod', 'decimal.js', 'Playwright'];
+    const invariantes = [
+      'Ledger append-only: los movimientos no se editan ni borran; se corrigen con reversión.',
+      'Aritmética exacta en dinero y medidas; prohibido el punto flotante.',
+      'Autorización en dos capas: guarda en la aplicación y RLS en la base.',
+      'Bitácora inmutable: usuario, acción, valores, fecha y dispositivo.',
+      'Estructura multi-sede y multi-usuario por diseño, sin reconstruir el sistema.'
+    ];
+
+    const esfuerzo = [
+      { t: 'Análisis y arquitectura', p: 12, c: '#8B5CF6' },
+      { t: 'Base de datos y dominio', p: 22, c: '#2563EB' },
+      { t: 'Casos de uso / backend', p: 24, c: '#1EC8C8' },
+      { t: 'Interfaz / frontend', p: 20, c: '#00C896' },
+      { t: 'Seguridad y permisos', p: 10, c: '#5B8DEF' },
+      { t: 'Pruebas y QA', p: 7, c: '#E0A83B' },
+      { t: 'Capacitación y documentación', p: 5, c: '#93A7BC' }
+    ];
+
+    const TCO_MAX = 130;
+    const tco = [
+      { serie: 'Sistema propio (esta propuesta)', color: G, nota: 'Pago único del desarrollo; luego solo la nube (Supabase + Vercel), ≈ US$40/mes, sin licencias. El soporte es opcional y se cotiza aparte.', inicial: 15, anual: 2, vals: [17, 19, 21] },
+      { serie: 'Alternativa de mercado (WMS medio)', color: B, nota: 'Implementación inicial más una licencia que se vuelve a pagar cada año.', inicial: 25, anual: 35, vals: [55, 90, 125] }
+    ].map(s => ({ ...s, total: s.vals[s.vals.length - 1], barras: s.vals.map((v, i) => ({ anio: 'Año ' + (i + 1), v, w: +(v / TCO_MAX * 100).toFixed(2) })) }));
+
+    const cobCols = ['Contable', 'WMS', 'ERP', 'Neodysk'];
+    const cobFilas = [
+      { need: 'Plancha como objeto individual', v: [0, 1, 1, 2] },
+      { need: 'Retazo vendible con medidas y foto', v: [0, 1, 1, 2] },
+      { need: 'Cotización por metro lineal', v: [0, 0, 1, 2] },
+      { need: 'Trazabilidad unitaria por QR', v: [1, 2, 1, 2] },
+      { need: 'Operación offline en obra', v: [0, 1, 1, 2] },
+      { need: 'Costo visible solo por rol', v: [0, 0, 1, 2] },
+      { need: 'Ledger inmutable y auditoría', v: [1, 1, 1, 2] }
+    ];
+    const cobDot = n => n === 2 ? { bg: '#00C896', b: '#00C896', o: 1 } : n === 1 ? { bg: 'rgba(224,168,59,.25)', b: '#E0A83B', o: 1 } : { bg: 'transparent', b: 'rgba(255,255,255,.22)', o: 1 };
+    const cobertura = cobFilas.map(f => ({ need: f.need, celdas: f.v.map((n, i) => ({ col: cobCols[i], n, hi: i === 3, ...cobDot(n) })) }));
+
+    const roadmap = [
+      { nombre: 'Módulo 1 · Bodega y almacén', add: 'Infraestructura, catálogo, movimientos, existencias y reportes.', pct: 25, color: '#1EC8C8', actual: true, est: '$ 15M · firme' },
+      { nombre: '+ Módulo 2 · Comercial', add: 'Cotizador por metro lineal, listas de precio y seguimiento.', pct: 52, color: '#2563EB', actual: false, est: '≈ $ 6M' },
+      { nombre: '+ Módulo 3 · Producción', add: 'Órdenes, cinco estados, calidad, reproceso y merma.', pct: 78, color: '#8B5CF6', actual: false, est: '≈ $ 5M' },
+      { nombre: '+ Módulo 4 · Despacho', add: 'Custodia, acta de entrega con firma y operación en campo.', pct: 100, color: '#00C896', actual: false, est: '≈ $ 4M' }
+    ];
+
+    const valorComp = [
+      { t: 'Análisis y arquitectura', p: 15, c: '#8B5CF6' },
+      { t: 'Desarrollo del módulo', p: 45, c: '#1EC8C8' },
+      { t: 'Infraestructura y seguridad', p: 15, c: '#2563EB' },
+      { t: 'Capacitación y documentación', p: 10, c: '#00C896' },
+      { t: 'Garantía y estabilización', p: 15, c: '#5B8DEF' }
+    ];
+
+    const roiInv = 15, roiMax = 45;
+    const roiMark = +(roiInv / roiMax * 100).toFixed(1);
+    const roi = {
+      mark: roiMark,
+      ticks: [0, 15, 30, 45].map(v => ({ txt: '$' + v + 'M', left: +(v / roiMax * 100).toFixed(2) })),
+      scen: [
+        { k: 'conservador', mes: 1.2, color: T },
+        { k: 'esperado', mes: 2.4, color: G }
+      ].map(s => ({
+        k: s.k, color: s.color,
+        mesTxt: '$ ' + s.mes.toFixed(1).replace('.', ',') + 'M',
+        beTxt: 'mes ' + Math.ceil(roiInv / s.mes),
+        hor: [6, 12, 18].map(m => {
+          const v = +(s.mes * m).toFixed(1);
+          return {
+            m: 'Mes ' + m,
+            v: '$ ' + v.toFixed(1).replace('.', ',') + 'M',
+            w: +(Math.min(v, roiMax) / roiMax * 100).toFixed(1),
+            ok: v >= roiInv ? '✓' : '',
+            okColor: v >= roiInv ? '#00C896' : 'transparent'
+          };
+        })
+      }))
+    };
+
+    return { barras, familias, grupos, criterios, bloques, hitos, riesgos, cuotas, condiciones, fases, milestones, meses, pesoTicks, arquiLayers, stackChips, invariantes, esfuerzo, tco, cobertura, cobCols, roadmap, valorComp, roi };
+  }
+}
+</script>
+</body>
+</html>
